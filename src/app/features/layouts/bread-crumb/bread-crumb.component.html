@@ -1,0 +1,14 @@
+<ul class="breadcrumb breadcrumb-separatorless fw-semibold fs-base my-1">
+    <ng-container *ngFor="let item of pageArr ; let i = index">
+    <!--begin::Item-->
+    <li class="breadcrumb-item text-gray-500" >
+        <a [attr.href]="item.url == null ? 'javascript:void(0)' :item.url"
+            class="text-gray-500 text-hover-primary">{{item.title}}</a>
+    </li>
+    <!--end::Item-->
+    <!--begin::Item-->
+    <li class="breadcrumb-item" *ngIf="i != ( pageArr.length - 1) ">
+        <span class="text-gray-500">/</span>
+    </li>
+</ng-container>
+</ul>

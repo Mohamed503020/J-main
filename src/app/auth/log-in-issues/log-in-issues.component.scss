@@ -1,0 +1,36 @@
+$main-color: #5c6bc0;
+:host ::ng-deep{
+  display: block;
+  position: relative;
+
+  .difficulty_something .ng-select .ng-select-container ,
+  .verification_section  .ng-select .ng-select-container{
+    border: 1px solid #e5e6e7 !important;
+    border-radius: 1px !important;
+    background-color:$main-color;
+    padding: 10px;
+    color: #fff !important;
+    border: none !important;
+    
+}
+.form-group label {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #3f4254 !important;
+}
+
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
+
+/* Additional animations for each section */
+.difficulty_something, .verification_section, .log_issues_details {
+  transition: opacity 0.5s ease-in-out;
+}
+}
+
+
+
+
+
+

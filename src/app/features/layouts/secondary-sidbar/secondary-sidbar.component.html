@@ -1,0 +1,66 @@
+<div class="app-sidebar-secondary" [ngClass]="{'d-none':menuId == null}">
+    <!--begin::Sidebar secondary menu-->
+    <div class="menu menu-sub-indention menu-rounded menu-column fw-semibold fs-6 py-4 py-lg-6"
+        id="kt_app_sidebar_secondary_menu" data-kt-menu="true">
+        <div id="kt_app_sidebar_secondary_menu_wrapper" class="hover-scroll-y mx-3 px-4" data-kt-scroll="true"
+            data-kt-scroll-activate="{default: true, lg: true}" data-kt-scroll-height="auto"
+            data-kt-scroll-wrappers="#kt_app_sidebar_secondary_menu" data-kt-scroll-offset="20px">
+            <!--begin:Menu item-->
+            <div class="menu-item text " style="border-top: 0px !important;">
+                <!--begin:Menu content-->
+                <div class="menu-content ">
+                    <span class="menu-section fs-5 fw-bolder ps-1 text-white py-1">{{selectedMenu?.name}}</span>
+                </div>
+                <!--end:Menu content-->
+            </div>
+            <!--end:Menu item-->
+            <!--begin:Menu item-->
+            <div class="menu-item">
+                <!--begin:Menu link-->
+                <a class="menu-link " routerLink="/dashboard" routerLinkActive="active">
+                    <span class="menu-bullet">
+                        <span class="icon"><i class="fa-solid fa-house ms-3 "></i></span>
+                    </span>
+                    <span class="menu-title ms-3">Dashboard</span>
+                </a>
+                <!--end:Menu link-->
+            </div>
+            <!--end:Menu item-->
+            <!--begin:Menu item-->
+            <div class="menu-item">
+                <!--begin:Menu link-->
+                <a class="menu-link " routerLink="/sms/sender-list" routerLinkActive="active">
+                    <span class="menu-bullet">
+                        <span class="icon"><i class="fa-solid fa-users ms-3 "></i></span>
+                    </span>
+                    <span class="menu-title ms-3">Sender List</span>
+                </a>
+                <!--end:Menu link-->
+            </div>
+            <!--end:Menu item-->
+            <!--begin:Menu item-->
+            <div class="menu-item" *ngFor="let item of selectedMenu?.details">
+                <!--begin:Menu link-->
+                <a class="menu-link " >
+                    <span class="menu-bullet">
+                        <span class="icon"><i class="fa-solid fa-users ms-3 "></i></span>
+                    </span>
+                    <span class="menu-title ms-3 ">{{item.name}}</span>
+                </a>
+                <!--end:Menu link-->
+            </div>
+            <!--end:Menu item-->
+
+        </div>
+    </div>
+    <!--end::Sidebar secondary menu-->
+
+</div>
+
+<button id="kt_app_sidebar_secondary_toggle" [ngClass]="{'d-none':menuId == null}"
+ class="app-sidebar-secondary-toggle btn btn-sm btn-icon bg-body btn-color-gray-600 btn-active-color-primary
+  position-absolute translate-middle z-index-1 start-100 end-0 bottom-0 shadow-sm  mb-4 active"
+    data-kt-toggle="true" data-kt-toggle-state="active" data-kt-toggle-target="body"
+    data-kt-toggle-name="app-sidebar-secondary-collapse">
+    <i class="ki-outline ki-arrow-left fs-2 rotate-180"></i>
+</button>

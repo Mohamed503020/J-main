@@ -1,0 +1,1473 @@
+<div id="kt_app_sidebar" class="app-sidebar" data-kt-drawer="true" data-kt-drawer-name="app-sidebar"
+  data-kt-drawer-activate="{default: true, lg: false}" data-kt-drawer-overlay="true" data-kt-drawer-width="auto"
+  data-kt-drawer-direction="start" data-kt-drawer-toggle="#kt_app_sidebar_mobile_toggle" 
+  style="max-width: 340px !important; width:unset  !important ;">
+  <!--begin::Sidebar primary-->
+  <div class="app-sidebar-primary">
+    <!--begin::Logo-->
+    <div class="app-sidebar-logo d-none d-md-flex flex-center pt-10 pb-2" id="kt_app_sidebar_logo">
+      <!--begin::Logo image-->
+      <a href="index.html">
+        <img alt="Logo" src="assets/media/logo/spalshscreenlogo.svg" class="h-30px" style="margin-right: 100px;" />
+      </a>
+      <!--end::Logo image-->
+    </div>
+    <!--end::Logo-->
+    <!--begin::Primary menu-->
+    <div class="app-sidebar-menu flex-grow-1 hover-scroll-y scroll-ms my-5" id="kt_aside_menu_wrapper"
+      data-kt-scroll="true" data-kt-scroll-height="auto"
+      data-kt-scroll-dependencies="#kt_app_sidebar_logo, #kt_app_sidebar_footer"
+      data-kt-scroll-wrappers="#kt_app_sidebar_menu" data-kt-scroll-offset="5px">
+      <!--begin::Menu-->
+      <div id="kt_aside_menu"
+        class="menu menu-column menu-title-gray-600 menu-state-primary menu-state-icon-primary menu-state-bullet-primary menu-arrow-gray-500 fw-semibold fs-6"
+        data-kt-menu="true">
+
+        <!--=================  Financial and administrative system ====================== -->
+        <!--end:Menu item-->
+        <div data-kt-menu-trigger="{default: 'click', lg: 'hover'}"
+          [attr.data-kt-menu-placement]="(selectedLanguage$ |async)?.dir == themeDirectionEnum.Ltr ? 'right-start' : 'left-start'"
+          class="menu-item here show py-2" (click)="onChangeSelectedMenu(menuTypeEnum.FinancialSystem)">
+          <!--begin:Menu link-->
+          <span class="menu-link menu-center">
+            <span class="menu-icon me-0">
+              <i class="fas fa-coins fs-4"></i>
+            </span>
+          </span>
+          <!--end:Menu link-->
+          <!--begin:Menu sub-->
+          <div class="menu-sub menu-sub-dropdown py-4 w-250px mh-75 overflow-auto">
+            <!--begin:Menu item-->
+            <div class="menu-item">
+              <!--begin:Menu content-->
+              <div class="menu-content">
+                <span class="menu-section fs-5 fw-bolder ps-1 py-1">النظام المالي
+                  والاداري
+
+                </span>
+              </div>
+              <!--end:Menu content-->
+            </div>
+            <!--end:Menu item-->
+            <!--begin:Menu item-->
+            <div class="menu-item">
+              <!--begin:Menu link-->
+              <a class="menu-link " routerLink="/" routerLinkActive="active"routerLinkActive="active">
+                <span class="menu-bullet">
+                  <span class="ms-3 me-3 "><i class="fa-solid fa-house-user"></i></span>
+                </span>
+                <span class="menu-title"> رئيسية النظام المالي والاداي</span>
+              </a>
+              <!--end:Menu link-->
+            </div>
+            <!--end:Menu item-->
+            <!--begin:Menu item-->
+            <div class="menu-item">
+              <!--begin:Menu link-->
+              <a class="menu-link " routerLink="/sms-message/" routerLinkActive="active"routerLinkActive="active">
+                <span class="menu-bullet">
+                  <span class="ms-3 me-3"><i class="fa-solid fa-users"></i></span>
+                </span>
+                <span class="menu-title"> انشاء شركة جديدة </span>
+              </a>
+              <!--end:Menu link-->
+            </div>
+            <!--end:Menu item-->
+            <!--begin:Menu item-->
+            <div class="menu-item">
+              <!--begin:Menu link-->
+              <a class="menu-link " routerLink="/sms-message/" routerLinkActive="active"routerLinkActive="active">
+                <span class="menu-bullet">
+                  <span class="ms-3 me-3"><i class="fa-solid fa-users"></i></span>
+                </span>
+                <span class="menu-title"> العملاء </span>
+              </a>
+              <!--end:Menu link-->
+            </div>
+            <!--end:Menu item-->
+            <!--begin:Menu item-->
+            <div class="menu-item">
+              <!--begin:Menu link-->
+              <a class="menu-link " routerLink="/sms-message/" routerLinkActive="active"routerLinkActive="active">
+                <span class="menu-bullet">
+                  <span class="ms-3 me-3"><i class="fa-solid fa-users"></i></span>
+                </span>
+                <span class="menu-title"> فواتير المبيعات </span>
+              </a>
+              <!--end:Menu link-->
+            </div>
+            <!--end:Menu item-->
+
+            <!--begin:Menu item-->
+            <div class="menu-item">
+              <!--begin:Menu link-->
+              <a class="menu-link " routerLink="/sms-message/" routerLinkActive="active"routerLinkActive="active">
+                <span class="menu-bullet">
+                  <span class="ms-3 me-3"><i class="fa-solid fa-users"></i></span>
+                </span>
+                <span class="menu-title"> فواتير المشتريات </span>
+              </a>
+              <!--end:Menu link-->
+            </div>
+            <!--end:Menu item-->
+            <!--begin:Menu item-->
+            <div class="menu-item">
+              <!--begin:Menu link-->
+              <a class="menu-link " routerLink="/sms-message/" routerLinkActive="active"routerLinkActive="active">
+                <span class="menu-bullet">
+                  <span class="ms-3 me-3"><i class="fa-solid fa-users"></i></span>
+                </span>
+                <span class="menu-title"> سندات القبض </span>
+              </a>
+              <!--end:Menu link-->
+            </div>
+            <!--end:Menu item-->
+            <!--begin:Menu item-->
+            <div class="menu-item">
+              <!--begin:Menu link-->
+              <a class="menu-link " routerLink="/sms-message/" routerLinkActive="active"routerLinkActive="active">
+                <span class="menu-bullet">
+                  <span class="ms-3 me-3"><i class="fa-solid fa-users"></i></span>
+                </span>
+                <span class="menu-title"> سندات الصرف </span>
+              </a>
+              <!--end:Menu link-->
+            </div>
+            <!--end:Menu item-->
+            <!--begin:Menu item-->
+            <div class="menu-item">
+              <!--begin:Menu link-->
+              <a class="menu-link " href="javascript:void(0)" routerLinkActive="active">
+                <span class="menu-bullet">
+                  <span class="ms-3 me-3"><i class="fa-solid fa-users"></i></span>
+                </span>
+                <span class="menu-title"> تحصيل من عميل </span>
+              </a>
+              <!--end:Menu link-->
+            </div>
+            <!--end:Menu item-->
+            <!--begin:Menu item-->
+            <div class="menu-item">
+              <!--begin:Menu link-->
+              <a class="menu-link " href="javascript:void(0)" routerLinkActive="active">
+                <span class="menu-bullet">
+                  <span class="ms-3 me-3"><i class="fa-solid fa-users"></i></span>
+                </span>
+                <span class="menu-title"> صرف الى عميل </span>
+              </a>
+              <!--end:Menu link-->
+            </div>
+            <!--end:Menu item-->
+                        <!--begin:Menu item-->
+                        <div class="menu-item">
+                          <!--begin:Menu link-->
+                          <a class="menu-link " href="javascript:void(0)" routerLinkActive="active">
+                            <span class="menu-bullet">
+                              <span class="ms-3 me-3"><i class="fa-solid fa-users"></i></span>
+                            </span>
+                            <span class="menu-title">   التسويات البنكية </span>
+                          </a>
+                          <!--end:Menu link-->
+                        </div>
+                        <!--end:Menu item-->
+                                    <!--begin:Menu item-->
+            <div class="menu-item">
+              <!--begin:Menu link-->
+              <a class="menu-link " href="javascript:void(0)" routerLinkActive="active">
+                <span class="menu-bullet">
+                  <span class="ms-3 me-3"><i class="fa-solid fa-users"></i></span>
+                </span>
+                <span class="menu-title">   العهد  </span>
+              </a>
+              <!--end:Menu link-->
+            </div>
+            <!--end:Menu item-->
+                        <!--begin:Menu item-->
+                        <div class="menu-item">
+                          <!--begin:Menu link-->
+                          <a class="menu-link " href="javascript:void(0)" routerLinkActive="active">
+                            <span class="menu-bullet">
+                              <span class="ms-3 me-3"><i class="fa-solid fa-users"></i></span>
+                            </span>
+                            <span class="menu-title">   قيود اليومية </span>
+                          </a>
+                          <!--end:Menu link-->
+                        </div>
+                        <!--end:Menu item-->
+            <!--end:Menu item-->
+          </div>
+          <!--end:Menu sub-->
+        </div>
+        <!--end::Menu-->
+
+        <!-- =============== system and resource management ========= -->
+        <!--end:Menu item-->
+        <div data-kt-menu-trigger="{default: 'click', lg: 'hover'}"
+          [attr.data-kt-menu-placement]="(selectedLanguage$ |async)?.dir == themeDirectionEnum.Ltr ? 'right-start' : 'left-start'"
+          class="menu-item here show py-2" (click)="onChangeSelectedMenu(menuTypeEnum.SystemManagement)">
+          <!--begin:Menu link-->
+          <span class="menu-link menu-center">
+            <span class="menu-icon me-0">
+              <i class="fa fa-sitemap fs-4"></i>
+            </span>
+          </span>
+          <!--end:Menu link-->
+          <!--begin:Menu sub-->
+          <div class="menu-sub menu-sub-dropdown px-2 py-4 w-250px mh-75 overflow-auto">
+            <!--begin:Menu item-->
+            <div class="menu-item">
+              <!--begin:Menu content-->
+              <div class="menu-content">
+                <span class="menu-section fs-5 fw-bolder ps-1 py-1">ادارة النظم والموارد</span>
+              </div>
+              <!--end:Menu content-->
+            </div>
+            <!--end:Menu item-->
+            <!--begin:Menu item-->
+            <div class="menu-item">
+              <!--begin:Menu link-->
+              <a class="menu-link " href="javascript:void(0)" routerLinkActive="active">
+                <span class="menu-bullet">
+                  <span class="ms-3 me-3 "><i class="fas fa-home"></i></span>
+                </span>
+                <span class="menu-title"> رئيسية ادارة النظم والموارد</span>
+              </a>
+              <!--end:Menu link-->
+            </div>
+            <!--end:Menu item-->
+            <!--begin:Menu item-->
+            <div class="menu-item">
+              <!--begin:Menu link-->
+              <a class="menu-link " href="javascript:void(0)" routerLinkActive="active">
+                <span class="menu-bullet">
+                  <span class="ms-3 me-3 ">
+                    <i class="fas fa-mobile-alt"></i></span>
+                </span>
+                <span class="menu-title"> العملاء المتوقعين </span>
+              </a>
+              <!--end:Menu link-->
+            </div>
+            <!--end:Menu item-->
+            <!--begin:Menu item-->
+            <div class="menu-item">
+              <!--begin:Menu link-->
+              <a class="menu-link " href="javascript:void(0)" routerLinkActive="active">
+                <span class="menu-bullet">
+                  <span class="ms-3 me-3">
+                    <i class="fas fa-mobile-alt"></i>
+                  </span>
+                </span>
+                <span class="menu-title"> المجموعات </span>
+              </a>
+              <!--end:Menu link-->
+            </div>
+            <!--end:Menu item-->
+            <!--begin:Menu item-->
+            <div class="menu-item">
+              <!--begin:Menu link-->
+              <a class="menu-link " routerLink="/sms-message/" routerLinkActive="active">
+                <span class="menu-bullet">
+                  <span class="ms-3 me-3"><i class="fa-solid fa-comment "></i></span>
+                </span>
+                <span class="menu-title">العملاء الفعليين </span>
+              </a>
+              <!--end:Menu link-->
+            </div>
+            <!--end:Menu item-->
+            <!--begin:Menu item-->
+            <div class="menu-item">
+              <!--begin:Menu link-->
+              <a class="menu-link " routerLink="/sms-message/" routerLinkActive="active">
+                <span class="menu-bullet">
+                  <span class="ms-3 me-3"><i class="fa-solid fa-comment "></i></span>
+                </span>
+                <span class="menu-title"> مهام </span>
+              </a>
+              <!--end:Menu link-->
+            </div>
+            <!--end:Menu item-->
+
+            <!--begin:Menu item-->
+            <div class="menu-item">
+              <!--begin:Menu link-->
+              <a class="menu-link " routerLink="/sms-message/" routerLinkActive="active">
+                <span class="menu-bullet">
+                  <span class="ms-3 me-3"><i class="fa-solid fa-comment "></i></span>
+                </span>
+                <span class="menu-title"> اجتماعات أونلاين </span>
+              </a>
+              <!--end:Menu link-->
+              <!--begin:Menu item-->
+              <div class="menu-item">
+                <!--begin:Menu link-->
+                <a class="menu-link " routerLink="/sms-message/" routerLinkActive="active">
+                  <span class="menu-bullet">
+                    <span class="ms-3 me-3"><i class="fa-solid fa-comment "></i></span>
+                  </span>
+                  <span class="menu-title"> اتصال هاتفي </span>
+                </a>
+                <!--end:Menu link-->
+              </div>
+              <!--end:Menu item-->
+              <!--begin:Menu item-->
+              <div class="menu-item">
+                <!--begin:Menu link-->
+                <a class="menu-link " routerLink="/sms-message/" routerLinkActive="active">
+                  <span class="menu-bullet">
+                    <span class="ms-3 me-3"><i class="fa-solid fa-comment "></i></span>
+                  </span>
+                  <span class="menu-title"> عروض الاسعار </span>
+                </a>
+                <!--end:Menu link-->
+              </div>
+              <!--end:Menu item-->
+                          <!--begin:Menu item-->
+            <div class="menu-item">
+              <!--begin:Menu link-->
+              <a class="menu-link " href="javascript:void(0)" routerLinkActive="active">
+                <span class="menu-bullet">
+                  <span class="ms-3 me-3 "><i class="fas fa-home"></i></span>
+                </span>
+                <span class="menu-title"> رئيسية   </span>
+              </a>
+              <!--end:Menu link-->
+            </div>
+            <!--end:Menu item-->
+                    <!--begin:Menu item-->
+                    <div class="menu-item">
+                      <!--begin:Menu link-->
+                      <a class="menu-link " href="javascript:void(0)" routerLinkActive="active">
+                        <span class="menu-bullet">
+                          <span class="ms-3 me-3"><i class="fa-solid fa-users"></i></span>
+                        </span>
+                        <span class="menu-title"> العملاء </span>
+                      </a>
+                      <!--end:Menu link-->
+                    </div>
+                    <!--end:Menu item-->
+            </div>
+            <!--end:Menu item-->
+          </div>
+          <!--end:Menu sub-->
+        </div>
+        <!--end::Menu-->
+
+        <!-- =========customer relation managenent====================== -->
+        <div data-kt-menu-trigger="{default: 'click', lg: 'hover'}"
+          [attr.data-kt-menu-placement]="(selectedLanguage$ |async)?.dir == themeDirectionEnum.Ltr ? 'right-start' : 'left-start'"
+          class="menu-item here show py-2" (click)="onChangeSelectedMenu(menuTypeEnum.CustomerRelation)">
+          <!--begin:Menu link-->
+          <span class="menu-link menu-center">
+            <span class="menu-icon me-0">
+              <i class="fas fa-chart-line fs-4"></i>
+            </span>
+          </span>
+          <!--end:Menu link-->
+          <!--begin:Menu sub-->
+          <div class="menu-sub menu-sub-dropdown px-2 py-4 w-250px mh-75 overflow-auto">
+            <!--begin:Menu item-->
+            <div class="menu-item">
+              <!--begin:Menu content-->
+              <div class="menu-content">
+                <span class="menu-section fs-5 fw-bolder ps-1 py-1">ادارة علاقات
+                  العملاء </span>
+              </div>
+              <!--end:Menu content-->
+            </div>
+            <!--end:Menu item-->
+            <!--begin:Menu item-->
+            <div class="menu-item">
+              <!--begin:Menu link-->
+              <a class="menu-link " href="javascript:void(0)" routerLinkActive="active">
+                <span class="menu-bullet">
+                  <span class="ms-3 me-3 "><i class="fas fa-home"></i></span>
+                </span>
+                <span class="menu-title"> رئيسية ادرة علاقات العملاء</span>
+              </a>
+              <!--end:Menu link-->
+            </div>
+            <!--end:Menu item-->
+          </div>
+          <!--end:Menu sub-->
+        </div>
+
+        <!-- =========start your project  ====================== -->
+        <div data-kt-menu-trigger="{default: 'click', lg: 'hover'}"
+          [attr.data-kt-menu-placement]="(selectedLanguage$ |async)?.dir == themeDirectionEnum.Ltr ? 'right-start' : 'left-start'"
+          class="menu-item here show py-2" (click)="onChangeSelectedMenu(menuTypeEnum.StartProject)">
+          <!--begin:Menu link-->
+          <span class="menu-link menu-center">
+            <span class="menu-icon me-0">
+              <i class="fa fa-briefcase fs-4"></i>
+            </span>
+          </span>
+          <!--end:Menu link-->
+          <!--begin:Menu sub-->
+          <div class="menu-sub menu-sub-dropdown px-2 py-4 w-250px mh-75 overflow-auto">
+            <!--begin:Menu item-->
+            <div class="menu-item">
+              <!--begin:Menu content-->
+              <div class="menu-content">
+                <span class="menu-section fs-5 fw-bolder ps-1 py-1"> ابدا مشروعك
+                </span>
+              </div>
+              <!--end:Menu content-->
+            </div>
+            <!--end:Menu item-->
+            <!--begin:Menu item-->
+            <div class="menu-item">
+              <!--begin:Menu link-->
+              <a class="menu-link " href="javascript:void(0)" routerLinkActive="active">
+                <span class="menu-bullet">
+                  <span class="ms-3 me-3 "><i class="fas fa-home"></i></span>
+                </span>
+                <span class="menu-title"> رئيسية ابدا مشروعك</span>
+              </a>
+              <!--end:Menu link-->
+            </div>
+            <!--end:Menu item-->
+          </div>
+          <!--end:Menu sub-->
+        </div>
+
+        <!-- =========Hosting service    ====================== -->
+        <div data-kt-menu-trigger="{default: 'click', lg: 'hover'}"
+          [attr.data-kt-menu-placement]="(selectedLanguage$ |async)?.dir == themeDirectionEnum.Ltr ? 'right-start' : 'left-start'"
+          class="menu-item here show py-2" (click)="onChangeSelectedMenu(menuTypeEnum.Hosting)">
+          <!--begin:Menu link-->
+          <span class="menu-link menu-center">
+            <span class="menu-icon me-0">
+              <i class="fas fa-database fs-4"></i>
+            </span>
+          </span>
+          <!--end:Menu link-->
+          <!--begin:Menu sub-->
+          <div class="menu-sub menu-sub-dropdown px-2 py-4 w-250px mh-75 overflow-auto">
+            <!--begin:Menu item-->
+            <div class="menu-item">
+              <!--begin:Menu content-->
+              <div class="menu-content">
+                <span class="menu-section fs-5 fw-bolder ps-1 py-1"> الهوست 
+                </span>
+              </div>
+              <!--end:Menu content-->
+            </div>
+            <!--end:Menu item-->
+            <!--begin:Menu item-->
+            <div class="menu-item">
+              <!--begin:Menu link-->
+              <a class="menu-link " href="javascript:void(0)" routerLinkActive="active">
+                <span class="menu-bullet">
+                  <span class="ms-3 me-3 "><i class="fas fa-home"></i></span>
+                </span>
+                <span class="menu-title"> رئيسية خدمات الاستضافة </span>
+              </a>
+              <!--end:Menu link-->
+            </div>
+            <!--end:Menu item-->
+                        <!--begin:Menu item-->
+                        <div class="menu-item">
+                          <!--begin:Menu link-->
+                          <a class="menu-link " routerLink="/sms-message/" routerLinkActive="active">
+                            <span class="menu-bullet">
+                              <span class="ms-3 me-3"><i class="fa-solid fa-comment "></i></span>
+                            </span>
+                            <span class="menu-title">  طلب استضافة </span>
+                          </a>
+                          <!--end:Menu link-->
+                        </div>
+                        <!--end:Menu item-->
+          </div>
+          <!--end:Menu sub-->
+        </div>
+        <!--================= sms menu ====================== -->
+        <!--begin:Menu item-->
+        <div data-kt-menu-trigger="{default: 'click', lg: 'hover'}"
+          [attr.data-kt-menu-placement]="(selectedLanguage$ |async)?.dir == themeDirectionEnum.Ltr ? 'right-start' : 'left-start'"
+          class="menu-item here show py-2" (click)="onChangeSelectedMenu(menuTypeEnum.Sms)">
+          <!--begin:Menu link-->
+          <span class="menu-link menu-center">
+            <span class="menu-icon me-0">
+              <i class="fa-solid fa-comment-sms fs-4"></i>
+            </span>
+          </span>
+          <!--end:Menu link-->
+          <!--begin:Menu sub-->
+          <div class="menu-sub menu-sub-dropdown px-2 py-4 w-250px mh-75 overflow-auto">
+            <!--begin:Menu item-->
+            <div class="menu-item">
+              <!--begin:Menu content-->
+              <div class="menu-content">
+                <span class="menu-section fs-5 fw-bolder ps-1 py-1">الرسائل النصيه</span>
+              </div>
+              <!--end:Menu content-->
+            </div>
+            <!--end:Menu item-->
+            <!-- ===========sms menu start======== -->
+
+            <!--begin:Menu item-->
+            <div class="menu-item">
+              <!--begin:Menu link-->
+              <a class="menu-link " href="javascript:void(0)" routerLinkActive="active">
+                <span class="menu-bullet">
+                  <span class="ms-3 me-3 "><i class="fa-solid fa-comment-sms "></i></span>
+                </span>
+                <span class="menu-title"> الصفحة الرئسية</span>
+              </a>
+              <!--end:Menu link-->
+            </div>
+            <!--end:Menu item-->
+            <!--begin:Menu item-->
+            <div class="menu-item">
+              <!--begin:Menu link-->
+              <a class="menu-link " href="javascript:void(0)" routerLinkActive="active">
+                <span class="menu-bullet">
+                  <span class="ms-3 me-3"><i class="fa-solid fa-comment-sms "></i></span>
+                </span>
+                <span class="menu-title">طلب أسماء الارسال </span>
+              </a>
+              <!--end:Menu link-->
+            </div>
+            <!--end:Menu item-->
+            <!--begin:Menu item-->
+            <div class="menu-item">
+              <!--begin:Menu link-->
+              <a class="menu-link " href="javascript:void(0)" routerLinkActive="active">
+                <span class="menu-bullet">
+                  <span class="ms-3 me-3"><i class="fa-solid fa-comment "></i></span>
+                </span>
+                <span class="menu-title">ارسال رسالة</span>
+              </a>
+              <!--end:Menu link-->
+            </div>
+            <!--end:Menu item-->
+            <!--begin:Menu item-->
+            <div class="menu-item">
+              <!--begin:Menu link-->
+              <a class="menu-link " href="javascript:void(0)" routerLinkActive="active">
+                <span class="menu-bullet">
+                  <span class="ms-3 me-3"><i class="fa-solid fa-users"></i></span>
+                </span>
+                <span class="menu-title">الارقام والمجموعات </span>
+              </a>
+              <!--end:Menu link-->
+            </div>
+            <!--end:Menu item-->
+            <!--begin:Menu item-->
+            <div class="menu-item">
+              <!--begin:Menu link-->
+              <a class="menu-link " routerLink="/sms/sms-send-message/" routerLinkActive="active">
+                <span class="menu-bullet">
+                  <span class="ms-3 me-3"><i class="fa-solid fa-box-archive "></i></span>
+                </span>
+                <span class="menu-title">ارشيف الرسائل </span>
+              </a>
+              <!--end:Menu link-->
+            </div>
+            <!--end:Menu item-->
+            <!--begin:Menu item-->
+            <div class="menu-item">
+              <!--begin:Menu link-->
+              <a class="menu-link " routerLink="/sms-r/" routerLinkActive="active">
+                <span class="menu-bullet">
+                  <span class="ms-3 me-3"><i class="fa-solid fa-box-open "></i></span>
+                </span>
+                <span class="menu-title">الباقات والرصيد</span>
+              </a>
+              <!--end:Menu link-->
+            </div>
+            <!--end:Menu item-->
+            <!--begin:Menu item-->
+            <div class="menu-item">
+              <!--begin:Menu link-->
+              <a class="menu-link " href="javascript:void(0)" routerLinkActive="active">
+                <span class="menu-bullet">
+                  <span class="ms-3 me-3"><i class="fa-solid fa-gear "></i></span>
+                </span>
+                <span class="menu-title">تذاكر الدعم الفني </span>
+              </a>
+              <!--end:Menu link-->
+            </div>
+            <!--end:Menu item-->
+
+            <!--begin:Menu item-->
+            <div class="menu-item">
+              <!--begin:Menu link-->
+              <a class="menu-link " href="javascript:void(0)" routerLinkActive="active">
+                <span class="menu-bullet">
+                  <span class="ms-3 me-3"><i class="fa-solid fa-bell "></i></span>
+                </span>
+                <span class="menu-title">الرسائل والتنبيهات </span>
+              </a>
+              <!--end:Menu link-->
+            </div>
+            <!--end:Menu item-->
+            <!--begin:Menu item-->
+            <div class="menu-item">
+              <!--begin:Menu link-->
+              <a class="menu-link " href="javascript:void(0)" routerLinkActive="active">
+                <span class="menu-bullet">
+                  <span class="ms-3 me-3">
+                    <i class="fa-solid fa-users-gear"></i>
+
+                  </span>
+                </span>
+                <span class="menu-title">ادارة الحسابات الرئيسية</span>
+              </a>
+              <!--end:Menu link-->
+            </div>
+            <!--end:Menu item-->
+            <!--begin:Menu item-->
+            <div class="menu-item">
+              <!--begin:Menu link-->
+              <a class="menu-link "  href="javascript:void(0)"routerLinkActive="active">
+                <span class="menu-bullet">
+                  <span class="ms-3 me-3">
+                    <i class="fa-solid fa-users-gear"></i>
+
+                  </span>
+                </span>
+                <span class="menu-title">ادارة الحسابات الفرعية</span>
+              </a>
+              <!--end:Menu link-->
+            </div>
+            <!--end:Menu item-->
+          </div>
+          <!--end:Menu sub-->
+        </div>
+        <!--begin:Menu item-->
+        <!--================= WhatsApp menu ====================== -->
+        <!--end:Menu item-->
+        <div data-kt-menu-trigger="{default: 'click', lg: 'hover'}"
+          [attr.data-kt-menu-placement]="(selectedLanguage$ |async)?.dir == themeDirectionEnum.Ltr ? 'right-start' : 'left-start'"
+          class="menu-item here show py-2" (click)="onChangeSelectedMenu(menuTypeEnum.whatApp)">
+          <!--begin:Menu link-->
+          <span class="menu-link menu-center">
+            <span class="menu-icon me-0">
+              <i class="fa-brands fa-whatsapp fs-4"></i>
+            </span>
+          </span>
+          <!--end:Menu link-->
+          <!--begin:Menu sub-->
+          <div class="menu-sub menu-sub-dropdown px-2 py-4 w-250px mh-75 overflow-auto">
+            <!--begin:Menu item-->
+            <div class="menu-item">
+              <!--begin:Menu content-->
+              <div class="menu-content">
+                <span class="menu-section fs-5 fw-bolder ps-1 py-1"> واتساب</span>
+              </div>
+              <!--end:Menu content-->
+            </div>
+            <!--end:Menu item-->
+            <!--begin:Menu item-->
+            <div class="menu-item">
+              <!--begin:Menu link-->
+              <a class="menu-link " href="javascript:void(0)" routerLinkActive="active">
+                <span class="menu-bullet">
+                  <span class="ms-3 me-3 "><i class="fa-brands fa-whatsapp"></i></span>
+                </span>
+                <span class="menu-title"> رئيسية الوتساب</span>
+              </a>
+              <!--end:Menu link-->
+            </div>
+            <!--end:Menu item-->
+            <!--begin:Menu item-->
+            <div class="menu-item">
+              <!--begin:Menu link-->
+              <a class="menu-link " href="javascript:void(0)" routerLinkActive="active">
+                <span class="menu-bullet">
+                  <span class="ms-3 me-3 "><i class="fa-solid fa-mobile-screen"></i></span>
+                </span>
+                <span class="menu-title">اضافة رقم خدمة </span>
+              </a>
+              <!--end:Menu link-->
+            </div>
+            <!--end:Menu item-->
+            <!--begin:Menu item-->
+            <div class="menu-item">
+              <!--begin:Menu link-->
+              <a class="menu-link " href="javascript:void(0)" routerLinkActive="active">
+                <span class="menu-bullet">
+                  <span class="ms-3 me-3"><i class="fa-solid fa-comment "></i></span>
+                </span>
+                <span class="menu-title">ارسال رسالة</span>
+              </a>
+              <!--end:Menu link-->
+            </div>
+            <!--end:Menu item-->
+            <!--begin:Menu item-->
+            <div class="menu-item">
+              <!--begin:Menu link-->
+              <a class="menu-link " href="javascript:void(0)" routerLinkActive="active">
+                <span class="menu-bullet">
+                  <span class="ms-3 me-3"><i class="fa-solid fa-comment "></i></span>
+                </span>
+                <span class="menu-title" >ارسال رسالة-Beta</span>
+              </a>
+              <!--end:Menu link-->
+            </div>
+            <!--end:Menu item-->
+            <!--begin:Menu item-->
+            <div class="menu-item">
+              <!--begin:Menu link-->
+              <a class="menu-link " href="javascript:void(0)" routerLinkActive="active">
+                <span class="menu-bullet">
+                  <span class="ms-3 me-3"><i class="fa-solid fa-users"></i></span>
+                </span>
+                <span class="menu-title">الارقام والمجموعات </span>
+              </a>
+              <!--end:Menu link-->
+            </div>
+            <!--end:Menu item-->
+
+            <!--begin:Menu item-->
+            <div class="menu-item">
+              <!--begin:Menu link-->
+              <a class="menu-link " href="javascript:void(0)" routerLinkActive="active">
+                <span class="menu-bullet">
+                  <span class="ms-3 me-3"><i class="fa-solid fa-box-archive "></i></span>
+                </span>
+                <span class="menu-title">ارشيف الرسائل </span>
+              </a>
+              <!--end:Menu link-->
+            </div>
+            <!--end:Menu item-->
+            <!--begin:Menu item-->
+            <div class="menu-item">
+              <!--begin:Menu link-->
+              <a class="menu-link " routerLink="/sms-review/" routerLinkActive="active">
+                <span class="menu-bullet">
+                  <span class="ms-3 me-3"><i class="fa-solid fa-box-archive "></i></span>
+                </span>
+                <span class="menu-title">الرسائل بالانتظار</span>
+              </a>
+              <!--end:Menu link-->
+            </div>
+            <!--end:Menu item-->
+            <!--begin:Menu item-->
+            <div class="menu-item">
+              <!--begin:Menu link-->
+              <a class="menu-link " href="javascript:void(0)" routerLinkActive="active">
+                <span class="menu-bullet">
+                  <span class="ms-3 me-3"><i class="fa-solid fa-gear "></i></span>
+                </span>
+                <span class="menu-title">تذاكر الدعم الفني </span>
+              </a>
+              <!--end:Menu link-->
+            </div>
+            <!--end:Menu item-->
+            <!--begin:Menu item-->
+            <div class="menu-item">
+              <!--begin:Menu link-->
+              <a class="menu-link " href="javascript:void(0)" routerLinkActive="active">
+                <span class="menu-bullet">
+                  <span class="ms-3 me-3"><i class="fa-solid fa-dollar-sign"></i></span>
+                </span>
+                <span class="menu-title">شراء المنتجات </span>
+              </a>
+              <!--end:Menu link-->
+            </div>
+            <!--end:Menu item-->
+          </div>
+          <!--end:Menu sub-->
+        </div>
+        <!--end::Menu-->
+        <!-- =========sala store    ====================== -->
+        <div data-kt-menu-trigger="{default: 'click', lg: 'hover'}"
+          [attr.data-kt-menu-placement]="(selectedLanguage$ |async)?.dir == themeDirectionEnum.Ltr ? 'right-start' : 'left-start'"
+          class="menu-item here show py-2" (click)="onChangeSelectedMenu(menuTypeEnum.SalaStor)">
+          <!--begin:Menu link-->
+          <span class="menu-link menu-center">
+            <span class="menu-icon me-0">
+              <img width="70%" data-savepage-currentsrc="https://user-dev.4ja.ai/assets/media/salla/salla.svg"
+                data-savepage-src="assets/media/salla/salla.svg"
+                src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxzdmcgd2lkdGg9IjQzOXB4IiBoZWlnaHQ9IjQzOXB4IiB2aWV3Qm94PSIwIDAgNDM5IDQzOSIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4NCiAgICA8dGl0bGU+R3JvdXAgMzwvdGl0bGU+DQogICAgPGcgaWQ9Itin2YTYrtiv2YXYp9iqLdin2YTYsdim2YrYs9mK2KkiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPg0KICAgICAgICA8ZyBpZD0iQXJ0Ym9hcmQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xODc3LjAwMDAwMCwgLTY2My4wMDAwMDApIj4NCiAgICAgICAgICAgIDxnIGlkPSJHcm91cC0zIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxODgyLjAwMDAwMCwgNjcwLjAwMDAwMCkiPg0KICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik03MS43NTg2MjA3LDAgQzU2LjMyMTgzOTEsMC45MjgxNjA5MiA0MC44MzYyMDY5LDkuODY3ODE2MDkgMjUuMzAxNzI0MSwyNi44MTg5NjU1IEM5Ljc2NzI0MTM4LDQzLjc3MDExNDkgMiw2MC4wNjE3ODE2IDIsNzUuNjkzOTY1NSBMMiwzNDguNjQ2NTUyIEM2LjA1NDU5NzcsMzY4LjkxOTU0IDEzLjgyMTgzOTEsMzg1LjQ3OTg4NSAyNS4zMDE3MjQxLDM5OC4zMjc1ODYgQzM2Ljc4MTYwOTIsNDExLjE3NTI4NyA1Ny41Njc1Mjg3LDQyMC4wNjYwOTIgODcuNjU5NDgyOCw0MjUgTDM0OS4zMjc1ODYsNDI1IEMzNjkuMjU4NjIxLDQyNSAzODYuOTkxMzc5LDQxNi4xMDkxOTUgNDAyLjUyNTg2MiwzOTguMzI3NTg2IEM0MTguMDYwMzQ1LDM4MC41NDU5NzcgNDI2LjIxODM5MSwzNjMuOTg1NjMyIDQyNywzNDguNjQ2NTUyIEw0MjcsODYuMDI1ODYyMSBDNDI3LDYyLjM4MjE4MzkgNDE4Ljg0MTk1NCw0Mi42NDY1NTE3IDQwMi41MjU4NjIsMjYuODE4OTY1NSBDMzg2LjIwOTc3LDEwLjk5MTM3OTMgMzY4LjQ3NzAxMSwyLjA1MTcyNDE0IDM0OS4zMjc1ODYsMCBMNzEuNzU4NjIwNywwIFoiIGlkPSJQYXRoLTIiIHN0cm9rZT0iI0ZGRkZGRiIgc3Ryb2tlLXdpZHRoPSIxMyIgZmlsbD0iI0ZGRkZGRiI+PC9wYXRoPg0KICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik03Mi40MjkyOTI5LDAgQzU3LjAwMTY4MzUsMC45MjY2NDcwMDEgNDEuNTI1MjUyNSw5Ljg1MTcyMDc1IDI2LDI2Ljc3NTIyMTIgQzc4LjQ4MzE2NSwzNi42MjY5NDIgMTAxLjYwMDE2OCw0Ni4wNjQxMTAxIDk1LjM1MTAxMDEsNTUuMDg2NzI1NyBMOTUuMzUxMDEwMSwxMjQgTDMzMy42NDg5OSwxMjQgTDMzMy42NDg5OSw1NS4wODY3MjU3IEMzMzQuODQzMzQzLDQ5LjgzNDg5NjkgMzQwLjIzODEyNCw0NS4yNTA0MzI4IDM0OS44MzMzMzMsNDEuMzMzMzMzMyBDMzcwLjExNjAyNSwzMy4wNTMyMzAzIDM2Mi45NDE5MTksMzMuMDY2NjY2NyA0MDMsMjYuNzc1MjIxMiBDMzg2LjY5MzYwMywxMC45NzM0NTEzIDM2OC45NzEzOCwyLjA0ODM3NzU4IDM0OS44MzMzMzMsMCBMNzIuNDI5MjkyOSwwIFoiIGlkPSJQYXRoLTIiIHN0cm9rZT0iI0Q5RENFRCIgc3Ryb2tlLXdpZHRoPSIxMyIgZmlsbD0iI0Q5RENFRCI+PC9wYXRoPg0KICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0wLDEwMyBDMCwxMTguNTU1NTU2IDI4LjMzMzMzMzMsMTI1Ljg4ODg4OSA4NSwxMjUgTDg1LDY1IEMyOC4zMzMzMzMzLDgzLjgyNTAwNjggMCw5Ni40OTE2NzM1IDAsMTAzIFoiIGlkPSJQYXRoLTMiIHN0cm9rZT0iIzQyNTBBMyIgc3Ryb2tlLXdpZHRoPSIxMCIgZmlsbD0iIzQyNTBBMyI+PC9wYXRoPg0KICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0zNDQuNSw5OS42NjY2NjY3IEMzNDQuNSwxMTUuMjIyMjIyIDM3MiwxMjMuNjY2NjY3IDQyNywxMjUgTDQyNyw2NSBDMzcyLDgxLjYwMjc4NDYgMzQ0LjUsOTMuMTU4MzQwMiAzNDQuNSw5OS42NjY2NjY3IFoiIGlkPSJQYXRoLTMiIHN0cm9rZT0iIzQyNTBBMyIgc3Ryb2tlLXdpZHRoPSIxMCIgZmlsbD0iIzQyNTBBMyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzg1Ljc1MDAwMCwgOTUuMDAwMDAwKSBzY2FsZSgtMSwgMSkgdHJhbnNsYXRlKC0zODUuNzUwMDAwLCAtOTUuMDAwMDAwKSAiPjwvcGF0aD4NCiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMTE5LjQwMjUzNCwyNTkuODIzNjEzIEMxMDQuNjU4ODQsMjcyLjcwODA5NSAxNjAuMTg2MDgzLDMyMCAyMTkuOTY3NzI1LDMyMCBDMjc5Ljc0OTM2NywzMjAgMzI5LjYyODUyOCwyNzUuNDE2NzY0IDMxNC4xNTEzMTcsMjU5LjgyMzYxMyBDMjk4LjY3NDEwNywyNDQuMjMwNDYxIDI3NC42MTQ3NDcsMjkxLjU5NTU3NCAyMTkuOTY3NzI1LDI5Ni41MDA0NjIgQzE2NS4zMjA3MDMsMzAxLjQwNTM1IDE0MC44MjEyMzIsMjQwLjQyMzY4MyAxMTkuNDAyNTM0LDI1OS44MjM2MTMgWiIgaWQ9IlBhdGgtNCIgc3Ryb2tlPSIjNDI1MEEzIiBmaWxsPSIjNDI1MEEzIj48L3BhdGg+DQogICAgICAgICAgICAgICAgPHBhdGggZD0iTTI1NS44Mjk3MTcsMjExLjQ1NTEwMiBDMjY4LjU0OTUzMywyMTcuODE1MTA5IDI3Ni4yMzg0OTksMjAyLjUxOTAzNyAyOTEuNDE1NzkzLDIwMS45NTI1MDIgQzMwNS44NDE3MTMsMjAxLjQxNDAxNCAzMjQuMjA3OTIsMjE3LjA2Njg3MyAzMjYuNDEzNjY5LDIxMS40NTUxMDIgQzMzNS42Nzc4MTMsMTg2LjQ2NDAxMyAzMDIuMDc2OTEsMTc1LjA5MDgyMiAyODQuODcyMDcyLDE3Ny4yNjA3MDcgQzI2Ny42NjcyMzQsMTc5LjQzMDU5MiAyNDQuOTcxNjEsMjAyLjUxNzQgMjU1LjgyOTcxNywyMTEuNDU1MTAyIFoiIGlkPSJQYXRoLTUiIHN0cm9rZT0iIzQyNTBBMyIgZmlsbD0iIzQyNTBBMyI+PC9wYXRoPg0KICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0xMDQuODI5NzE3LDIxMS40NTUxMDIgQzExNy41NDk1MzMsMjE3LjgxNTEwOSAxMjUuMjM4NDk5LDIwMi41MTkwMzcgMTQwLjQxNTc5MywyMDEuOTUyNTAyIEMxNTQuODQxNzEzLDIwMS40MTQwMTQgMTczLjIwNzkyLDIxNy4wNjY4NzMgMTc1LjQxMzY2OSwyMTEuNDU1MTAyIEMxODQuNjc3ODEzLDE4Ni40NjQwMTMgMTUxLjA3NjkxLDE3NS4wOTA4MjIgMTMzLjg3MjA3MiwxNzcuMjYwNzA3IEMxMTYuNjY3MjM0LDE3OS40MzA1OTIgOTMuOTcxNjEwMiwyMDIuNTE3NCAxMDQuODI5NzE3LDIxMS40NTUxMDIgWiIgaWQ9IlBhdGgtNSIgc3Ryb2tlPSIjNDI1MEEzIiBmaWxsPSIjNDI1MEEzIj48L3BhdGg+DQogICAgICAgICAgICA8L2c+DQogICAgICAgIDwvZz4NCiAgICA8L2c+DQo8L3N2Zz4="
+                alt="Salla" class="img-fluid m-auto">
+            </span>
+          </span>
+          <!--end:Menu link-->
+          <!--begin:Menu sub-->
+          <div class="menu-sub menu-sub-dropdown px-2 py-4 w-250px mh-75 overflow-auto">
+            <!--begin:Menu item-->
+            <div class="menu-item">
+              <!--begin:Menu content-->
+              <div class="menu-content">
+                <span class="menu-section fs-5 fw-bolder ps-1 py-1"> متجر سلة
+                </span>
+              </div>
+              <!--end:Menu content-->
+            </div>
+            <!--end:Menu item-->
+            <!--begin:Menu item-->
+            <div class="menu-item">
+              <!--begin:Menu link-->
+              <a class="menu-link " href="javascript:void(0)" routerLinkActive="active">
+                <span class="menu-bullet">
+                  <span class="ms-3 me-3 "><i class="fas fa-home"></i></span>
+                </span>
+                <span class="menu-title"> رئيسية متجر سلة </span>
+              </a>
+              <!--end:Menu link-->
+            </div>
+            <!--end:Menu item-->
+                        <!--begin:Menu item-->
+                        <div class="menu-item">
+                          <!--begin:Menu link-->
+                          <a class="menu-link " href="javascript:void(0)" routerLinkActive="active">
+                            <span class="menu-bullet">
+                              <span class="ms-3 me-3"><i class="fa-solid fa-box-open "></i></span>
+                            </span>
+                            <span class="menu-title">الباقات والرصيد</span>
+                          </a>
+                          <!--end:Menu link-->
+                        </div>
+                        <!--end:Menu item-->
+          </div>
+          <!--end:Menu sub-->
+        </div>
+        <!--end::Menu-->
+
+        <!-- ========= Google sheet Beta   ====================== -->
+        <div data-kt-menu-trigger="{default: 'click', lg: 'hover'}"
+          [attr.data-kt-menu-placement]="(selectedLanguage$ |async)?.dir == themeDirectionEnum.Ltr ? 'right-start' : 'left-start'"
+          class="menu-item here show py-2" (click)="onChangeSelectedMenu(menuTypeEnum.GoogleSheet)">
+          <!--begin:Menu link-->
+          <span class="menu-link menu-center">
+            <span class="menu-icon me-0">
+              <img alt="google sheet beta" width="70%" class="img-fluid m-auto"
+                data-savepage-currentsrc="https://user-dev.4ja.ai/assets/icons/google_sheet2.svg"
+                data-savepage-src="assets/icons/google_sheet2.svg"
+                src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxzdmcgd2lkdGg9IjcycHgiIGhlaWdodD0iNzNweCIgdmlld0JveD0iMCAwIDcyIDczIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPg0KICAgIDx0aXRsZT5Hcm91cCAyPC90aXRsZT4NCiAgICA8ZyBpZD0iZ29vZ2xlLXNoZWV0IiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4NCiAgICAgICAgPGcgaWQ9Ikdyb3VwLTIiPg0KICAgICAgICAgICAgPGVsbGlwc2UgaWQ9Ik92YWwtQ29weSIgZmlsbD0iIzQyNTBBMyIgY3g9IjM2IiBjeT0iMzYuNSIgcng9IjM2IiByeT0iMzYuNSI+PC9lbGxpcHNlPg0KICAgICAgICAgICAgPHBhdGggZD0iTTQyLjU0NjA3NDcsMTYuNSBMNTAuNzYxNTk3OSwyNS4xOTg3ODkzIEw1MC43NjE1OTc5LDUzIEM1MC43NjE1OTc5LDUzLjk2NjQ5ODMgNTAuMzY5ODQ3MSw1NC44NDE0OTgzIDQ5LjczNjQ3MTcsNTUuNDc0ODczNyBDNDkuMTAzMDk2Myw1Ni4xMDgyNDkyIDQ4LjIyODA5NjMsNTYuNSA0Ny4yNjE1OTc5LDU2LjUgTDI1LjI2MTU5NzksNTYuNSBDMjQuMjk1MDk5Niw1Ni41IDIzLjQyMDA5OTYsNTYuMTA4MjQ5MiAyMi43ODY3MjQyLDU1LjQ3NDg3MzcgQzIyLjE1MzM0ODgsNTQuODQxNDk4MyAyMS43NjE1OTc5LDUzLjk2NjQ5ODMgMjEuNzYxNTk3OSw1MyBMMjEuNzYxNTk3OSwyMCBDMjEuNzYxNTk3OSwxOS4wMzM1MDE3IDIyLjE1MzM0ODgsMTguMTU4NTAxNyAyMi43ODY3MjQyLDE3LjUyNTEyNjMgQzIzLjQyMDA5OTYsMTYuODkxNzUwOCAyNC4yOTUwOTk2LDE2LjUgMjUuMjYxNTk3OSwxNi41IEw0Mi41NDYwNzQ3LDE2LjUgWiIgaWQ9IlJlY3RhbmdsZSIgc3Ryb2tlPSIjRkZGRkZGIiBmaWxsPSIjRkZGRkZGIj48L3BhdGg+DQogICAgICAgICAgICA8cG9seWdvbiBpZD0iUGF0aCIgc3Ryb2tlPSIjRDhEOEQ4IiBmaWxsPSIjRDhEOEQ4IiBwb2ludHM9IjQxLjc2MTU5NzkgMTYuNSA0MS43NjE1OTc5IDI1LjUgNTEuMjYxNTk3OSAyNS41Ij48L3BvbHlnb24+DQogICAgICAgICAgICA8ZyBpZD0iR3JvdXAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDI2LjI2MTYsIDM0KSIgc3Ryb2tlPSIjNDI1MEEzIj4NCiAgICAgICAgICAgICAgICA8cmVjdCBpZD0iUmVjdGFuZ2xlIiB4PSIwLjUiIHk9IjAuNSIgd2lkdGg9IjE5IiBoZWlnaHQ9IjEyIj48L3JlY3Q+DQogICAgICAgICAgICAgICAgPHJlY3QgaWQ9IlJlY3RhbmdsZSIgeD0iMC41IiB5PSI0LjUiIHdpZHRoPSIxOSIgaGVpZ2h0PSI0Ij48L3JlY3Q+DQogICAgICAgICAgICAgICAgPHJlY3QgaWQ9IlJlY3RhbmdsZSIgeD0iNy41IiB5PSIwLjUiIHdpZHRoPSIxMiIgaGVpZ2h0PSIxMiI+PC9yZWN0Pg0KICAgICAgICAgICAgPC9nPg0KICAgICAgICA8L2c+DQogICAgPC9nPg0KPC9zdmc+">
+            </span>
+          </span>
+          <!--end:Menu link-->
+          <!--begin:Menu sub-->
+          <div class="menu-sub menu-sub-dropdown px-2 py-4 w-250px mh-75 overflow-auto">
+            <!--begin:Menu item-->
+            <div class="menu-item">
+              <!--begin:Menu content-->
+              <div class="menu-content">
+                <span class="menu-section fs-5 fw-bolder ps-1 py-1">  ملفات جوجل شيت
+                   </span>
+              </div>
+              <!--end:Menu content-->
+            </div>
+            <!--end:Menu item-->
+            <!--begin:Menu item-->
+            <div class="menu-item">
+              <!--begin:Menu link-->
+              <a class="menu-link " href="javascript:void(0)" routerLinkActive="active">
+                <span class="menu-bullet">
+                  <span class="ms-3 me-3 ">
+                    <i class="fas fa-home"></i>
+                  </span>
+                </span>
+                <span class="menu-title"> الصفحة الرئسية    </span>
+              </a>
+              <!--end:Menu link-->
+            </div>
+            <!--end:Menu item-->
+                        <!--begin:Menu item-->
+                        <div class="menu-item">
+                          <!--begin:Menu link-->
+                          <a class="menu-link " href="javascript:void(0)" routerLinkActive="active">
+                            <span class="menu-bullet">
+                              <span class="ms-3 me-3 "><i class="fa-solid fa-mobile-screen"></i></span>
+                            </span>
+                            <span class="menu-title">  ارسال رسالة </span>
+                          </a>
+                          <!--end:Menu link-->
+                        </div>
+                        <!--end:Menu item-->
+                                    <!--begin:Menu item-->
+            <div class="menu-item">
+              <!--begin:Menu link-->
+              <a class="menu-link " href="javascript:void(0)" routerLinkActive="active">
+                <span class="menu-bullet">
+                  <span class="ms-3 me-3 "><i class="fa-solid fa-mobile-screen"></i></span>
+                </span>
+                <span class="menu-title">  تحميل الارقام والمجموعات </span>
+              </a>
+              <!--end:Menu link-->
+            </div>
+            <!--end:Menu item-->
+                        <!--begin:Menu item-->
+                        <div class="menu-item">
+                          <!--begin:Menu link-->
+                          <a class="menu-link " href="javascript:void(0)" routerLinkActive="active">
+                            <span class="menu-bullet">
+                              <span class="ms-3 me-3"><i class="fa-solid fa-users"></i></span>
+                            </span>
+                            <span class="menu-title">الارقام والمجموعات </span>
+                          </a>
+                          <!--end:Menu link-->
+                        </div>
+                        <!--end:Menu item-->
+                                    <!--begin:Menu item-->
+            <div class="menu-item">
+              <!--begin:Menu link-->
+              <a class="menu-link " href="javascript:void(0)" routerLinkActive="active">
+                <span class="menu-bullet">
+                  <span class="ms-3 me-3"><i class="fa-solid fa-box-archive "></i></span>
+                </span>
+                <span class="menu-title">ارشيف الرسائل </span>
+              </a>
+              <!--end:Menu link-->
+            </div>
+            <!--end:Menu item-->
+                        <!--begin:Menu item-->
+                        <div class="menu-item">
+                          <!--begin:Menu link-->
+                          <a class="menu-link " href="javascript:void(0)" routerLinkActive="active">
+                            <span class="menu-bullet">
+                              <span class="ms-3 me-3"><i class="fa-solid fa-box-archive "></i></span>
+                            </span>
+                            <span class="menu-title">اعدادات شيتات الارسال </span>
+                          </a>
+                          <!--end:Menu link-->
+                        </div>
+                        <!--end:Menu item-->
+                                    <!--begin:Menu item-->
+            <div class="menu-item">
+              <!--begin:Menu link-->
+              <a class="menu-link " href="javascript:void(0)" routerLinkActive="active">
+                <span class="menu-bullet">
+                  <span class="ms-3 me-3"><i class="fa-solid fa-box-archive "></i></span>
+                </span>
+                <span class="menu-title"> اعدادات شيتات تحميل الارقام </span>
+              </a>
+              <!--end:Menu link-->
+            </div>
+            <!--end:Menu item-->
+          </div>
+          <!--end:Menu sub-->
+        </div>
+
+        <!-- ========= make   ====================== -->
+        <div data-kt-menu-trigger="{default: 'click', lg: 'hover'}"
+          [attr.data-kt-menu-placement]="(selectedLanguage$ |async)?.dir == themeDirectionEnum.Ltr ? 'right-start' : 'left-start'"
+          class="menu-item here show py-2" (click)="onChangeSelectedMenu(menuTypeEnum.Make)">
+          <!--begin:Menu link-->
+          <span class="menu-link menu-center">
+            <span class="menu-icon me-0">
+              <img width="70%" data-savepage-currentsrc="https://user-dev.4ja.ai/assets/icons/make01.svg"
+                data-savepage-src="assets/icons/make01.svg"
+                src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxzdmcgd2lkdGg9Ijg1MHB4IiBoZWlnaHQ9Ijg5NHB4IiB2aWV3Qm94PSIwIDAgODUwIDg5NCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4NCiAgICA8dGl0bGU+R3JvdXAgMjwvdGl0bGU+DQogICAgPGcgaWQ9Itin2YTYrtiv2YXYp9iqLdin2YTYsdim2YrYs9mK2KkiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPg0KICAgICAgICA8ZyBpZD0iQXJ0Ym9hcmQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xNjcyLjAwMDAwMCwgLTQzNS4wMDAwMDApIj4NCiAgICAgICAgICAgIDxnIGlkPSJHcm91cC0yIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxNjcyLjAwMDAwMCwgNDM1LjAwMDAwMCkiPg0KICAgICAgICAgICAgICAgIDxlbGxpcHNlIGlkPSJPdmFsIiBzdHJva2U9IiM0MjUwQTMiIGZpbGw9IiM0MjUwQTMiIGN4PSI0MjUiIGN5PSI0NDciIHJ4PSI0MjQuNSIgcnk9IjQ0Ni41Ij48L2VsbGlwc2U+DQogICAgICAgICAgICAgICAgPGcgaWQ9Ikdyb3VwLTciIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEzNS43ODc2MTksIDIyMy41Njg3NjgpIiBmaWxsPSIjRkZGRkZGIj4NCiAgICAgICAgICAgICAgICAgICAgPHBhdGggZD0iTTQ3Mi4yMTIzODEsMjMuNDMxMjMxOSBMNTU4LjcxMjM4MSwyMy40MzEyMzE5IEM1NjkuNzU4MDc2LDIzLjQzMTIzMTkgNTc4LjcxMjM4MSwzMi4zODU1MzY5IDU3OC43MTIzODEsNDMuNDMxMjMxOSBMNTc4LjcxMjM4MSw0MDAuNDMxMjMyIEM1NzguNzEyMzgxLDQxMS40NzY5MjcgNTY5Ljc1ODA3Niw0MjAuNDMxMjMyIDU1OC43MTIzODEsNDIwLjQzMTIzMiBMNDcyLjIxMjM4MSw0MjAuNDMxMjMyIEM0NjEuMTY2Njg2LDQyMC40MzEyMzIgNDUyLjIxMjM4MSw0MTEuNDc2OTI3IDQ1Mi4yMTIzODEsNDAwLjQzMTIzMiBMNDUyLjIxMjM4MSw0My40MzEyMzE5IEM0NTIuMjEyMzgxLDMyLjM4NTUzNjkgNDYxLjE2NjY4NiwyMy40MzEyMzE5IDQ3Mi4yMTIzODEsMjMuNDMxMjMxOSBaIiBpZD0iUGF0aC03Ij48L3BhdGg+DQogICAgICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0zMDEuNzM2MzYyLDIzLjg2NzM2OTggTDM4OC42MDE3NiwyNS41ODUwNDg5IEMzOTkuNjA0ODI1LDI1LjgwMjYyMzggNDA4LjM2NDc0NSwzNC44Njg4MDM1IDQwOC4yMDQyMyw0NS44NzI4NDgxIEw0MDMuMDg0MDUyLDM5Ni44ODM1MTMgQzQwMi45MjI5NDYsNDA3LjkyODAzMyAzOTMuODM4OTkxLDQxNi43NTA3ODMgMzgyLjc5NDQ3MSw0MTYuNTg5Njc3IEMzODIuNzg1Njk3LDQxNi41ODk1NDkgMzgyLjc3NjkyMyw0MTYuNTg5NDE2IDM4Mi43NjgxNDksNDE2LjU4OTI3NiBMMjk1Ljk4MjIxLDQxNS4yMDkwNzMgQzI4NC45NTAwNjQsNDE1LjAzMzYyMyAyNzYuMTQ0MDE4LDQwNS45NTcxMDEgMjc2LjMwMjI5OCwzOTQuOTI0Njk2IEwyODEuMzQzMDE2LDQzLjU3NjU1NDUgQzI4MS41MDE0NywzMi41MzE5OTYxIDI5MC41ODMzMDYsMjMuNzA3MDY0OSAzMDEuNjI3ODY1LDIzLjg2NTUxODggQzMwMS42NjQwMzIsMjMuODY2MDM3NyAzMDEuNzAwMTk4LDIzLjg2NjY1NDcgMzAxLjczNjM2MiwyMy44NjczNjk4IFoiIGlkPSJQYXRoLTciIHRyYW5zZm9ybT0idHJhbnNsYXRlKDM0Mi4yNTUxMzQsIDIyMC4xODg3NzApIHJvdGF0ZSgxMC4wMDAwMDApIHRyYW5zbGF0ZSgtMzQyLjI1NTEzNCwgLTIyMC4xODg3NzApICI+PC9wYXRoPg0KICAgICAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMTY3LjczODUyLDIyLjgwODE2MzcgTDI1MC4yNjkyNjMsNDYuNzE5OTQ0MiBDMjYwLjg3ODYzMSw0OS43OTM4MTU1IDI2Ni45ODczNTgsNjAuODg2MjcyOCAyNjMuOTEzNDg3LDcxLjQ5NTY0MSBDMjYzLjg4NzY5OSw3MS41ODQ2NDQ4IDI2My44NjEyOTQsNzEuNjczNDY4NCAyNjMuODM0MjcyLDcxLjc2MjEwNTMgTDE2MC41MDg0OTIsNDEwLjY5MDY0MiBDMTU3LjI4NzQ1Niw0MjEuMjU2MjYxIDE0Ni4xMTExNjUsNDI3LjIxMDIyMiAxMzUuNTQ1NTQ1LDQyMy45ODkxODcgQzEzNS40NTM2OTYsNDIzLjk2MTE4NiAxMzUuMzYyMDUsNDIzLjkzMjUyNCAxMzUuMjcwNjE0LDQyMy45MDMyMDIgTDUyLjg1Mzc1NDgsMzk3LjQ3NDM3NiBDNDIuNDI5NDE0LDM5NC4xMzE1NzYgMzYuNjI5NjIyNiwzODMuMDI5MTYgMzkuODQwNTMxNSwzNzIuNTYzNDQyIEwxNDMuMDUyNDI3LDM2LjE1MTk1MDYgQzE0Ni4yNTYzNzIsMjUuNzA4OTMxOSAxNTcuMjQ2NTYxLDE5Ljc2ODMwOTggMTY3LjczODUyLDIyLjgwODE2MzcgWiIgaWQ9IlBhdGgtNyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTUxLjg5ODAzNywgMjIzLjcxMzk2OCkgcm90YXRlKDEwLjAwMDAwMCkgdHJhbnNsYXRlKC0xNTEuODk4MDM3LCAtMjIzLjcxMzk2OCkgIj48L3BhdGg+DQogICAgICAgICAgICAgICAgPC9nPg0KICAgICAgICAgICAgPC9nPg0KICAgICAgICA8L2c+DQogICAgPC9nPg0KPC9zdmc+"
+                alt="make" class="img-fluid m-auto">
+            </span>
+          </span>
+          <!--end:Menu link-->
+          <!--begin:Menu sub-->
+          <div class="menu-sub menu-sub-dropdown px-2 py-4 w-250px mh-75 overflow-auto">
+            <!--begin:Menu item-->
+            <div class="menu-item">
+              <!--begin:Menu content-->
+              <div class="menu-content">
+                <span class="menu-section fs-5 fw-bolder ps-1 py-1"> Make </span>
+              </div>
+              <!--end:Menu content-->
+            </div>
+            <!--end:Menu item-->
+            <!--begin:Menu item-->
+            <div class="menu-item">
+              <!--begin:Menu link-->
+              <a class="menu-link " href="javascript:void(0)" routerLinkActive="active">
+                <span class="menu-bullet">
+                  <span class="ms-3 me-3 ">
+                    <i class="fas fa-home"></i>
+                  </span>
+                </span>
+                <span class="menu-title"> رئيسية make </span>
+              </a>
+              <!--end:Menu link-->
+            </div>
+            <!--end:Menu item-->
+                       <!--begin:Menu item-->
+                       <div class="menu-item">
+                        <!--begin:Menu link-->
+                        <a class="menu-link " href="javascript:void(0)" routerLinkActive="active">
+                          <span class="menu-bullet">
+                            <span class="ms-3 me-3 "><i class="fa-solid fa-mobile-screen"></i></span>
+                          </span>
+                          <span class="menu-title">  استخدام Make </span>
+                        </a>
+                        <!--end:Menu link-->
+                      </div>
+                      <!--end:Menu item-->
+                        <!--begin:Menu item-->
+                        <div class="menu-item">
+                          <!--begin:Menu link-->
+                          <a class="menu-link " href="javascript:void(0)" routerLinkActive="active">
+                            <span class="menu-bullet">
+                              <span class="ms-3 me-3"><i class="fa-solid fa-gear "></i></span>
+                            </span>
+                            <span class="menu-title">تذاكر الدعم الفني </span>
+                          </a>
+                          <!--end:Menu link-->
+                        </div>
+                        <!--end:Menu item-->
+          </div>
+          <!--end:Menu sub-->
+        </div>
+        <!-- ========= Email2SMS   ====================== -->
+        <div data-kt-menu-trigger="{default: 'click', lg: 'hover'}"
+          [attr.data-kt-menu-placement]="(selectedLanguage$ |async)?.dir == themeDirectionEnum.Ltr ? 'right-start' : 'left-start'"
+          class="menu-item here show py-2" (click)="onChangeSelectedMenu(menuTypeEnum.Email2SMS)">
+          <!--begin:Menu link-->
+          <span class="menu-link menu-center">
+            <span class="menu-icon me-0">
+              <i class="fas fa-envelope fs-4"></i>
+            </span>
+          </span>
+          <!--end:Menu link-->
+          <!--begin:Menu sub-->
+          <div class="menu-sub menu-sub-dropdown px-2 py-4 w-250px mh-75 overflow-auto">
+            <!--begin:Menu item-->
+            <div class="menu-item">
+              <!--begin:Menu content-->
+              <div class="menu-content">
+                <span class="menu-section fs-5 fw-bolder ps-1 py-1"> Email2SMS
+                </span>
+              </div>
+              <!--end:Menu content-->
+            </div>
+            <!--end:Menu item-->
+            <!--begin:Menu item-->
+            <div class="menu-item">
+              <!--begin:Menu link-->
+              <a class="menu-link " href="javascript:void(0)" routerLinkActive="active">
+                <span class="menu-bullet">
+                  <span class="ms-3 me-3 ">
+                    <i class="fas fa-home"></i>
+                  </span>
+                </span>
+                <span class="menu-title"> رئيسية Email2SMS </span>
+              </a>
+              <!--end:Menu link-->
+            </div>
+            <!--end:Menu item-->
+          </div>
+          <!--end:Menu sub-->
+        </div>
+
+        <!-- ========= WordPress   ====================== -->
+        <div data-kt-menu-trigger="{default: 'click', lg: 'hover'}"
+          [attr.data-kt-menu-placement]="(selectedLanguage$ |async)?.dir == themeDirectionEnum.Ltr ? 'right-start' : 'left-start'"
+          class="menu-item here show py-2" (click)="onChangeSelectedMenu(menuTypeEnum.WordPress)">
+          <!--begin:Menu link-->
+          <span class="menu-link menu-center">
+            <span class="menu-icon me-0">
+              <i class="fab fa-wordpress fs-4"></i>
+            </span>
+          </span>
+          <!--end:Menu link-->
+          <!--begin:Menu sub-->
+          <div class="menu-sub menu-sub-dropdown px-2 py-4 w-250px mh-75 overflow-auto">
+            <!--begin:Menu item-->
+            <div class="menu-item">
+              <!--begin:Menu content-->
+              <div class="menu-content">
+                <span class="menu-section fs-5 fw-bolder ps-1 py-1"> الووردبريس
+                </span>
+              </div>
+              <!--end:Menu content-->
+            </div>
+            <!--end:Menu item-->
+            <div class="menu-item">
+              <!--begin:Menu link-->
+              <a class="menu-link " href="javascript:void(0)" routerLinkActive="active">
+                <span class="menu-bullet">
+                  <span class="ms-3 me-3 "><i class="fa-solid fa-mobile-screen"></i></span>
+                </span>
+                <span class="menu-title">  إضافة  </span>
+              </a>
+              <!--end:Menu link-->
+            </div>
+            <!--end:Menu item-->
+            <div class="menu-item">
+              <!--begin:Menu link-->
+              <a class="menu-link " href="javascript:void(0)" routerLinkActive="active">
+                <span class="menu-bullet">
+                  <span class="ms-3 me-3 "><i class="fa-solid fa-mobile-screen"></i></span>
+                </span>
+                <span class="menu-title">  تصميم وتركيب  </span>
+              </a>
+              <!--end:Menu link-->
+            </div>
+            <!--end:Menu item-->
+          </div>
+          <!--end:Menu sub-->
+        </div>
+
+        <!-- ========= schools   ====================== -->
+        <div data-kt-menu-trigger="{default: 'click', lg: 'hover'}"
+          [attr.data-kt-menu-placement]="(selectedLanguage$ |async)?.dir == themeDirectionEnum.Ltr ? 'right-start' : 'left-start'"
+          class="menu-item here show py-2" (click)="onChangeSelectedMenu(menuTypeEnum.Schools)">
+          <!--begin:Menu link-->
+          <span class="menu-link menu-center">
+            <span class="menu-icon me-0">
+              <i class="fas fa-school fs-4"></i>
+            </span>
+          </span>
+          <!--end:Menu link-->
+          <!--begin:Menu sub-->
+          <div class="menu-sub menu-sub-dropdown px-2 py-4 w-250px mh-75 overflow-auto">
+            <!--begin:Menu item-->
+            <div class="menu-item">
+              <!--begin:Menu content-->
+              <div class="menu-content">
+                <span class="menu-section fs-5 fw-bolder ps-1 py-1"> المدارس </span>
+              </div>
+              <!--end:Menu content-->
+            </div>
+            <!--end:Menu item-->
+            <!--begin:Menu item-->
+            <div class="menu-item">
+              <!--begin:Menu link-->
+              <a class="menu-link " href="javascript:void(0)" routerLinkActive="active">
+                <span class="menu-bullet">
+                  <span class="ms-3 me-3 ">
+                    <i class="fas fa-home"></i>
+                  </span>
+                </span>
+                <span class="menu-title"> رئيسية المدارس </span>
+              </a>
+              <!--end:Menu link-->
+            </div>
+            <!--end:Menu item-->
+          </div>
+          <!--end:Menu sub-->
+        </div>
+
+        <!-- ========= Our ready made programs   ====================== -->
+        <div data-kt-menu-trigger="{default: 'click', lg: 'hover'}"
+          [attr.data-kt-menu-placement]="(selectedLanguage$ |async)?.dir == themeDirectionEnum.Ltr ? 'right-start' : 'left-start'"
+          class="menu-item here show py-2" (click)="onChangeSelectedMenu(menuTypeEnum.Programs)">
+          <!--begin:Menu link-->
+          <span class="menu-link menu-center">
+            <span class="menu-icon me-0">
+              <i class="fa fa-shapes fs-4"></i>
+            </span>
+          </span>
+          <!--end:Menu link-->
+          <!--begin:Menu sub-->
+          <div class="menu-sub menu-sub-dropdown px-2 py-4 w-250px mh-75 overflow-auto">
+            <!--begin:Menu item-->
+            <div class="menu-item">
+              <!--begin:Menu content-->
+              <div class="menu-content">
+                <span class="menu-section fs-5 fw-bolder ps-1 py-1"> برامجنا الجاهوة
+                </span>
+              </div>
+              <!--end:Menu content-->
+            </div>
+            <!--end:Menu item-->
+            <!--begin:Menu item-->
+            <div class="menu-item">
+              <!--begin:Menu link-->
+              <a class="menu-link " href="javascript:void(0)" routerLinkActive="active">
+                <span class="menu-bullet">
+                  <span class="ms-3 me-3 ">
+                    <i class="fas fa-home"></i>
+                  </span>
+                </span>
+                <span class="menu-title"> رئيسية برامجنا الجاهوة </span>
+              </a>
+              <!--end:Menu link-->
+            </div>
+            <!--end:Menu item-->
+            <!--begin:Menu item-->
+            <div class="menu-item">
+              <!--begin:Menu link-->
+              <a class="menu-link " href="javascript:void(0)" routerLinkActive="active">
+                <span class="menu-bullet">
+                  <span class="ms-3 me-3 ">
+                    <i  class="fas fa-list-alt"></i>
+                  </span>
+                </span>
+                <span class="menu-title">   تاسيس شركتك  </span>
+              </a>
+              <!--end:Menu link-->
+            </div>
+            <!--end:Menu item-->
+            <!--begin:Menu item-->
+            <div class="menu-item">
+              <!--begin:Menu link-->
+              <a class="menu-link " href="javascript:void(0)" routerLinkActive="active">
+                <span class="menu-bullet">
+                  <span class="ms-3 me-3 ">
+                    <i  class="fas fa-sitemap"></i>
+                  </span>
+                </span>
+                <span class="menu-title">    الاقامة بالامارات  </span>
+              </a>
+              <!--end:Menu link-->
+            </div>
+            <!--end:Menu item-->
+            <!--begin:Menu item-->
+            <div class="menu-item">
+              <!--begin:Menu link-->
+              <a class="menu-link " href="javascript:void(0)" routerLinkActive="active">
+                <span class="menu-bullet">
+                  <span class="ms-3 me-3 ">
+                    <i  class="fas fa-puzzle-piece"></i>
+                  </span>
+                </span>
+                <span class="menu-title">     تأشيرة الزيارة  </span>
+              </a>
+              <!--end:Menu link-->
+            </div>
+            <!--end:Menu item-->
+            
+          </div>
+          <!--end:Menu sub-->
+        </div>
+      </div>
+      <!--end::Menu-->
+    </div>
+    <!--end::Primary menu-->
+    <!--begin::Footer-->
+    <div class="d-flex flex-column flex-center pb-4 pb-lg-8" id="kt_app_sidebar_footer">
+      <!--begin::User menu-->
+      <div class="cursor-pointer symbol symbol-40px mb-9" data-kt-menu-trigger="{default: 'click', lg: 'hover'}"
+        data-kt-attach="parent" data-kt-menu-placement="right-end">
+        <img src="assets/media/avatars/300-2.jpg" alt="user" />
+      </div>
+      <!--begin::User account menu-->
+      <div
+        class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-800 menu-state-bg menu-state-color fw-semibold py-4 fs-6 w-275px"
+        data-kt-menu="true">
+        <!--begin::Menu item-->
+        <div class="menu-item px-3">
+          <div class="menu-content d-flex align-items-center px-3">
+            <!--begin::Avatar-->
+            <div class="symbol symbol-50px me-5">
+              <img alt="Logo" src="assets/media/avatars/300-2.jpg" />
+            </div>
+            <!--end::Avatar-->
+            <!--begin::Username-->
+            <div class="d-flex flex-column">
+              <div class="fw-bold d-flex align-items-center fs-5">{{(user$
+                |async)?.name}}
+                <span class="badge badge-light-success fw-bold fs-8 px-2 py-1 ms-2">Pro</span>
+              </div>
+              <a href="#" class="fw-semibold text-muted text-hover-primary fs-7">emma&#64;kt.com</a>
+            </div>
+            <!--end::Username-->
+          </div>
+        </div>
+        <!--end::Menu item-->
+        <!--begin::Menu separator-->
+        <div class="separator my-2"></div>
+        <!--end::Menu separator-->
+        <!--begin::Menu item-->
+        <div class="menu-item px-5">
+          <a href="account/overview.html" class="menu-link px-5">My Profile</a>
+        </div>
+        <!--end::Menu item-->
+        <!--begin::Menu item-->
+        <div class="menu-item px-5">
+          <a href="apps/projects/list.html" class="menu-link px-5">
+            <span class="menu-text">My Projects</span>
+            <span class="menu-badge">
+              <span class="badge badge-light-danger badge-circle fw-bold fs-7">3</span>
+            </span>
+          </a>
+        </div>
+        <!--end::Menu item-->
+        <!--begin::Menu item-->
+        <div class="menu-item px-5" data-kt-menu-trigger="{default: 'click', lg: 'hover'}"
+          data-kt-menu-placement="left-end" data-kt-menu-offset="-15px, 0">
+          <a href="#" class="menu-link px-5">
+            <span class="menu-title">My Subscription</span>
+            <span class="menu-arrow"></span>
+          </a>
+          <!--begin::Menu sub-->
+          <div class="menu-sub menu-sub-dropdown w-175px py-4">
+            <!--begin::Menu item-->
+            <div class="menu-item px-3">
+              <a href="account/referrals.html" class="menu-link px-5">Referrals</a>
+            </div>
+            <!--end::Menu item-->
+            <!--begin::Menu item-->
+            <div class="menu-item px-3">
+              <a href="account/billing.html" class="menu-link px-5">Billing</a>
+            </div>
+            <!--end::Menu item-->
+            <!--begin::Menu item-->
+            <div class="menu-item px-3">
+              <a href="account/statements.html" class="menu-link px-5">Payments</a>
+            </div>
+            <!--end::Menu item-->
+            <!--begin::Menu item-->
+            <div class="menu-item px-3">
+              <a href="account/statements.html" class="menu-link d-flex flex-stack px-5">Statements
+                <span class="ms-2 lh-0" data-bs-toggle="tooltip" title="View your statements">
+                  <i class="ki-outline ki-information-5 fs-5"></i>
+                </span></a>
+            </div>
+            <!--end::Menu item-->
+            <!--begin::Menu separator-->
+            <div class="separator my-2"></div>
+            <!--end::Menu separator-->
+            <!--begin::Menu item-->
+            <div class="menu-item px-3">
+              <div class="menu-content px-3">
+                <label class="form-check form-switch form-check-custom form-check-solid">
+                  <input class="form-check-input w-30px h-20px" type="checkbox" value="1" checked="checked"
+                    name="notifications" />
+                  <span class="form-check-label text-muted fs-7">Notifications</span>
+                </label>
+              </div>
+            </div>
+            <!--end::Menu item-->
+          </div>
+          <!--end::Menu sub-->
+        </div>
+        <!--end::Menu item-->
+        <!--begin::Menu item-->
+        <div class="menu-item px-5">
+          <a href="account/statements.html" class="menu-link px-5">My
+            Statements</a>
+        </div>
+        <!--end::Menu item-->
+        <!--begin::Menu separator-->
+        <div class="separator my-2"></div>
+        <!--end::Menu separator-->
+        <!--begin::Menu item-->
+        <div class="menu-item px-5" data-kt-menu-trigger="{default: 'click', lg: 'hover'}"
+          data-kt-menu-placement="left-start" data-kt-menu-offset="-15px, 0">
+          <a href="#" class="menu-link px-5">
+            <span class="menu-title position-relative">Mode
+              <span class="ms-5 position-absolute translate-middle-y top-50 end-0">
+                <i class="ki-outline ki-night-day theme-light-show fs-2"></i>
+                <i class="ki-outline ki-moon theme-dark-show fs-2"></i>
+              </span></span>
+          </a>
+          <!--begin::Menu-->
+          <div
+            class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-title-gray-700 menu-icon-gray-500 menu-active-bg menu-state-color fw-semibold py-4 fs-base w-150px"
+            data-kt-menu="true" data-kt-element="theme-mode-menu">
+            <!--begin::Menu item-->
+            <div class="menu-item px-3 my-0">
+              <a href="#" class="menu-link px-3 py-2" data-kt-element="mode" data-kt-value="light">
+                <span class="menu-icon" data-kt-element="icon">
+                  <i class="ki-outline ki-night-day fs-2"></i>
+                </span>
+                <span class="menu-title">Light</span>
+              </a>
+            </div>
+            <!--end::Menu item-->
+            <!--begin::Menu item-->
+            <div class="menu-item px-3 my-0">
+              <a href="#" class="menu-link px-3 py-2" data-kt-element="mode" data-kt-value="dark">
+                <span class="menu-icon" data-kt-element="icon">
+                  <i class="ki-outline ki-moon fs-2"></i>
+                </span>
+                <span class="menu-title">Dark</span>
+              </a>
+            </div>
+            <!--end::Menu item-->
+            <!--begin::Menu item-->
+            <div class="menu-item px-3 my-0">
+              <a href="#" class="menu-link px-3 py-2" data-kt-element="mode" data-kt-value="system">
+                <span class="menu-icon" data-kt-element="icon">
+                  <i class="ki-outline ki-screen fs-2"></i>
+                </span>
+                <span class="menu-title">System</span>
+              </a>
+            </div>
+            <!--end::Menu item-->
+          </div>
+          <!--end::Menu-->
+        </div>
+        <!--end::Menu item-->
+        <!--begin::Menu item-->
+        <div class="menu-item px-5" data-kt-menu-trigger="{default: 'click', lg: 'hover'}"
+          data-kt-menu-placement="left-start" data-kt-menu-offset="0, 0">
+          <a href="#" class="menu-link px-5">
+            <span class="menu-title position-relative">Language
+              <span class="fs-8 rounded bg-light px-3 py-2 position-absolute translate-middle-y top-50 end-0">English
+                <img class="w-15px h-15px rounded-1 ms-2" src="assets/media/flags/united-states.svg"
+                  alt /></span></span>
+          </a>
+          <!--begin::Menu sub-->
+          <div class="menu-sub menu-sub-dropdown w-175px py-4">
+            <!--begin::Menu item-->
+            <div class="menu-item px-3">
+              <a href="account/settings.html" class="menu-link d-flex px-5 active">
+                <span class="symbol symbol-20px me-4">
+                  <img class="rounded-1" src="assets/media/flags/united-states.svg" alt />
+                </span>English</a>
+            </div>
+            <!--end::Menu item-->
+            <!--begin::Menu item-->
+            <div class="menu-item px-3">
+              <a href="account/settings.html" class="menu-link d-flex px-5">
+                <span class="symbol symbol-20px me-4">
+                  <img class="rounded-1" src="assets/media/flags/spain.svg" alt />
+                </span>Spanish</a>
+            </div>
+            <!--end::Menu item-->
+            <!--begin::Menu item-->
+            <div class="menu-item px-3">
+              <a href="account/settings.html" class="menu-link d-flex px-5">
+                <span class="symbol symbol-20px me-4">
+                  <img class="rounded-1" src="assets/media/flags/germany.svg" alt />
+                </span>German</a>
+            </div>
+            <!--end::Menu item-->
+            <!--begin::Menu item-->
+            <div class="menu-item px-3">
+              <a href="account/settings.html" class="menu-link d-flex px-5">
+                <span class="symbol symbol-20px me-4">
+                  <img class="rounded-1" src="assets/media/flags/japan.svg" alt />
+                </span>Japanese</a>
+            </div>
+            <!--end::Menu item-->
+            <!--begin::Menu item-->
+            <div class="menu-item px-3">
+              <a href="account/settings.html" class="menu-link d-flex px-5">
+                <span class="symbol symbol-20px me-4">
+                  <img class="rounded-1" src="assets/media/flags/france.svg" alt />
+                </span>French</a>
+            </div>
+            <!--end::Menu item-->
+          </div>
+          <!--end::Menu sub-->
+        </div>
+        <!--end::Menu item-->
+        <!--begin::Menu item-->
+        <div class="menu-item px-5 my-1">
+          <a href="account/settings.html" class="menu-link px-5">Account
+            Settings</a>
+        </div>
+        <!--end::Menu item-->
+        <!--begin::Menu item-->
+        <div class="menu-item px-5">
+          <a href="javascript:void(0)" (click)="onLogout()"
+           class="menu-link px-5">Sign Out</a>
+        </div>
+        <!--end::Menu item-->
+      </div>
+      <!--end::User account menu-->
+      <!--begin::Action-->
+      <div class="app-navbar-item">
+        <!--begin::Link-->
+        <a href="javascript:void(0)" (click)="onLogout()">
+          <i class="ki-outline ki-exit-right fs-1"></i>
+        </a>
+        <!--end::Link-->
+      </div>
+      <!--end::Action-->
+    </div>
+    <!--end::Footer-->
+  </div>
+  <!--end::Sidebar primary-->
+  <!--begin::Sidebar secondary-->
+  <app-secondary-sidbar [menuId]="fCtrls.menuId.value"></app-secondary-sidbar>
+  <!--end::Sidebar secondary-->
+  <!--begin::Sidebar secondary toggle-->
+
+  <!--end::Sidebar secondary toggle-->
+</div>

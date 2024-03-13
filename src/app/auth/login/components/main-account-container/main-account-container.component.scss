@@ -1,0 +1,53 @@
+$main-color: #5c6bc0;
+$second-color: #3f50a9;
+
+//mixin
+@mixin button-main-account-styles($bg-color, $text-color) {
+  background-color: $bg-color;
+  color: $text-color;
+  border: 0;
+  font-size: 13px !important;
+}
+
+.main--account__container {
+
+  @media (max-width:400px) {
+    &__label {
+      font-size: 10px !important;
+    }
+
+    &__issues {
+      font-size: 9px !important;
+    }
+  }
+
+  &__google--btn {
+    @include button-main-account-styles(#ee534f, #fff);
+  }
+
+  &__zoho--btn {
+    @include button-main-account-styles(#efe04f, #fff);
+  }
+
+  &__google--btn:hover,
+  &__zoho--btn:hover {
+    @include button-main-account-styles(#fff, $main-color);
+  }
+}
+
+.separator-content {
+  &::before {
+    margin-left: 2.25rem;
+  }
+
+  &::after {
+    margin-right: 2.25rem;
+  }
+}
+
+
+@media screen and (max-width: 375px) {
+  .re-captcha__container {
+    scale: 0.8;
+  }
+}

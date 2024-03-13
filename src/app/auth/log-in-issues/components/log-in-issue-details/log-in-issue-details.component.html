@@ -1,0 +1,94 @@
+<div class="log_issues_details_content mb-10 w-100">
+  <div class="log_issues_stps d-flex justify-content-between align-items-center">
+    <div class="log_issues_stps_title text-white">
+      <h4 class="text-white">
+        <i class="fa fa-circle text-white">
+        </i>
+        {{lvl1?.name}}
+      </h4>
+      <h4 class="text-white">
+        <i class="fa fa-circle text-white">
+
+        </i>
+        {{lvl2?.name}}
+      </h4>
+    </div>
+    <div class="lg_issues_stps_icon">
+      <i class="fa fa-arrow-left fs-4 text-white mb-5" style="cursor: pointer;" (click)="onBack()"></i>
+    </div>
+  </div>
+  <div class="log_issues_form_container mt-5 rounded bg-white p-5">
+    <form action="" #nForm="ngForm" [formGroup]="rForm" (ngSubmit)="rForm!.valid && onSave()" novalidate
+      [ngClass]="{ 'submitted-form': nForm!.submitted }">
+
+      <div class="form-group mb-5">
+        <label class="w-100 text-right form-label "> الاسم <span class="text-danger">*</span></label>
+        <input type="text" class="form-control h-auto py-2" [formControl]="fCtrls!.name">
+      </div>
+      <div class="form-group mb-5">
+        <label class="w-100 text-right form-label"> رقم الجوال <span class="text-danger">*</span></label>
+        <ngx-intl-tel-input [cssClass]="'form-control  h-auto py-2 w-100'" [preferredCountries]="(preferredCountries$  | async)!" 
+          dir="ltr" [enableAutoCountrySelect]="true" [enablePlaceholder]="false" [searchCountryFlag]="true"
+          [searchCountryField]="[searchCountryField.Iso2, searchCountryField.Name]" [selectFirstCountry]="false"
+          [maxLength]="20" [phoneValidation]="true" [selectedCountryISO]="fCtrls.selectedCountryISO.value"
+          [separateDialCode]="true" [formControl]="fCtrls!.phone">
+        </ngx-intl-tel-input>
+      </div>
+      <div class="form-group mb-5">
+        <label class="w-100 text-right form-label ">البريد الالكتروني <span class="text-danger">*</span></label>
+        <input type="email" class="form-control  h-auto py-2 " [formControl]="fCtrls!.email">
+      </div>
+
+      <div class="form-group mb-5">
+        <label class="w-100 text-right form-label" > رفع صوره من الخطا </label>      
+        <input class="form-control h-auto py-2" #fileAttachmentElem type="file"  data-title=" sd s "
+          (change)="onFileChange($event)" [style.color]="fCtrls.fileUrl.value == null ?'#fff !important' :'black'">
+
+          <button class="btn btn-sm mt-2 bg-primary text-white" style="font-size: 12px !important;"
+           type="button" *ngIf="fCtrls.fileUrl.value != null" (click)="openFile()">
+            استعراض الملف
+            <i class="fas fa-download fa-2x text-white p-0"></i>
+        </button>
+      </div>
+      <div class="form-group d-flex align-items-center flex-wrap">
+        <label class="w-100 text-right form-label mb-5 "> طرق التواصل المناسبة <span
+            class="text-danger">*</span></label>
+        <div class="form-check mb-3 mx-5">
+          <input type="radio" class="form-check-input" [formControl]="fCtrls.contactMethod" name="contactMethod"
+            style="cursor: pointer;" value="اتصال هاتفي">
+          <label class="form-check-label " for="en"> اتصال هاتفي</label>
+        </div>
+        <div class="form-check mb-3 mx-5">
+          <input type="radio" class="form-check-input" [formControl]="fCtrls.contactMethod" name="contactMethod"
+            style="cursor: pointer;" value=" البريد الالكتروني ">
+          <label class="form-check-label " for="en"> البريد الالكتروني </label>
+        </div>
+        <div class="form-check mb-3 mx-5">
+          <input type="radio" class="form-check-input" [formControl]="fCtrls.contactMethod" name="contactMethod"
+            style="cursor: pointer;" value=" واتساب  ">
+          <label class="form-check-label " for="en"> واتساب </label>
+        </div>
+        <div class="form-check mb-3 mx-5">
+          <input type="radio" class="form-check-input" [formControl]="fCtrls.contactMethod" name="contactMethod"
+            style="cursor: pointer;" value="اجتماع عن طريق زوم  ">
+          <label class="form-check-label " for="en"> اجتماع عن طريق زوم </label>
+        </div>
+        <div class="form-check mx-5 mb-3">
+          <input type="radio" class="form-check-input" [formControl]="fCtrls.contactMethod" name="contactMethod"
+            style="cursor: pointer;" value="تواصل مع الدعم الفني المباشر">
+          <label class="form-check-label " for="en">تواصل مع الدعم الفني المباشر</label>
+        </div>
+      </div>
+      <div class="fv-row d-flex justify-content-center align-items-center re-captcha__container ">
+        <re-captcha #reCaptchaElem [siteKey]="reCaptchaKey" (resolved)=" this.fCtrls.reCaptcha.setValue($event)">
+        </re-captcha>
+      </div>
+      <div class="pb-lg-0 d-flex justify-content-center mb-5">
+        <button type="submit" class="btn btn-primary font-weight-bolder font-size-h6 px-8 py-2 my-3 position-relative"
+          [disabled]="fCtrls.reCaptcha.value == null">
+          حفظ
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

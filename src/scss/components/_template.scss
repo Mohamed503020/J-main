@@ -1,0 +1,57 @@
+#kt_app_header,
+#kt_app_wrapper {
+    background-color: #f7f8fa;
+}
+.app-sidebar-primary {
+  border-left:1px solid #e2e3e4 !important;
+}
+.submitted-form .ng-invalid:not(form):not(div):not(ngx-intl-tel-input) {
+    border: 3px solid lightcoral;
+}
+
+.submitted-form ngx-intl-tel-input.ng-invalid {
+    input {
+        border: 3px solid lightcoral;
+    }
+}
+
+body {
+    font-size: 13px !important;
+    font-family: 'Cairo', sans-serif !important;
+
+
+    &[lang="ar"] input {
+        direction: rtl !important;
+        text-align: right !important;
+    }
+
+    &[lang="en"] input {
+        direction: ltr !important;
+        text-align: left !important;
+    }
+
+    input[type="password"]{
+        direction: ltr !important;
+    }
+}
+
+
+html[dir="rtl"] {
+
+    input[type="url"],
+    input[type="number"] {
+        direction: rtl !important;
+    }
+
+    .back-to-login__btn {
+        position: absolute;
+        left: 30px !important;
+        right: unset !important;
+    }
+}
+
+#ngx-ui-loader .ngx-overlay{
+    z-index: -1 !important;
+      width: none !important;
+   height: none !important;
+}

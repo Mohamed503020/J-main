@@ -1,0 +1,13 @@
+:host ::ng-deep ngx-intl-tel-input{
+    width: 100%;
+    color: black;
+    .iti.iti--allow-dropdown{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .re-captcha__container {
+      scale: 0.8;
+    }
+  }

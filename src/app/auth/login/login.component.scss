@@ -1,0 +1,25 @@
+$main-color: #5c6bc0;
+$second-color: #3f50a9;
+
+
+.login__container{
+
+  //mixin
+  @mixin button-login-styles($bg-color, $text-color) {
+    background-color: $bg-color;
+    color: $text-color;
+    font-weight: bolder;
+    font-size: 13px !important;
+    padding: 0.75rem 1.5rem !important;
+    font-family: 'Cairo', sans-serif !important;
+  }
+
+&__btn--primary,&__btn--primary:hover,&__btn--primary.active{
+  @include button-login-styles(#fff, $second-color);
+}
+&__btn--secondary,&__btn--secondary:hover,&__btn--secondary.active{
+  @include button-login-styles($second-color,#fff);
+}
+
+}
+

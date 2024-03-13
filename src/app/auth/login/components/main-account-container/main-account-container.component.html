@@ -1,0 +1,64 @@
+<form
+    id="main-account__form```````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````"
+    class="form w-100 main--account__container" #nForm="ngForm" [formGroup]="rForm"
+    novalidate [ngClass]="{ 'submitted-form': nForm!.submitted }">
+
+    <!--begin::Input group=-->
+    <div class="fv-row">
+        <div class=" col-12 mb-5 w-100">
+            <!--begin::Email-->
+            <div class="d-flex justify-content-between">
+                <label for="email" class="text-white main--account__container__label font-weight-bolder ml-auto"> البريد
+                    الالكتروني </label>
+                <a [routerLink]="['/login-issues']"
+                    class="text-right fw-bolder  main--account__container__issues fs-md-4 cursor-pointer mb-1"
+                    style="color: #efe04f;" href="/log-in-issues"> اواجه صعوبه في تسجيل الدخول </a>
+            </div>
+            <input type="email" placeholder="البريد الالكترونى" name="email" [formControl]="fCtrls!.email"
+                autocomplete="off" class="form-control  h-auto py-2 px-6 " />
+            <small class="form-text text-danger"
+                *ngIf="nForm!.submitted && fCtrls.email.errors?.['email'] == true">البريد
+                الالكترونى غير صحيح</small>
+            <!--end::Email-->
+        </div>
+        <!--end::Input group=-->
+        <div class="col-12 mb-3 w-100">
+            <!--begin::Password-->
+            <div class="d-flex justify-content-between">
+                <label for="email" class="text-white main--account__container__label fw-bolder ml-auto">كلمة
+                    المرور</label>
+                <a [routerLink]="['/forgot-password']"
+                    class="text-right  main--account__container__issues fw-bolder fs-md-4 cursor-pointer mb-1 ng-star-inserted"
+                    style="color: #efe04f;"> نسيت كلمة المرور؟ </a>
+            </div>
+            <input type="password" placeholder="كلمة المرور" [formControl]="fCtrls!.password" name="password"
+                autocomplete="off" class="form-control  h-auto py-2 px-6" />
+            <!--end::Password-->
+
+            <!--end::Input group=-->
+        </div>
+
+        <div class="col-12 re-captcha__container">
+            <
+            <re-captcha #reCapatchaElem [siteKey]="reCaptchaKey" (resolved)="fCtrls.reCaptcha.patchValue($event)">
+            </re-captcha>
+        </div>
+    </div>
+
+    <div class="separator separator-content my-8">
+        <span class="w-225px text-gray-500 fw-semibold fs-7">او يمكنك استخدام</span>
+    </div>
+    <!--end::Submit button-->
+
+    <!--begin::Login options-->
+    <div class="pb-lg-0 text-center d-flex  mb-5" style="justify-content: center;">
+        <button type="button" (click)="onLoginWith(loginPlatform.Google)"
+            class="btn btn-default main--account__container__google--btn fw-bolder px-12 py-2 my-3 mx-3  py-3 position-relative">
+            GMAIL </button>
+        <button type="button" (click)="onLoginWith(loginPlatform.Zoho)"
+            class="btn btn-default main--account__container__zoho--btn  fw-bolder px-12 py-2 my-3 font-size-lg py-3 position-relative">
+            ZOHO </button>
+    </div>
+    <!--end::Login options-->
+
+</form>

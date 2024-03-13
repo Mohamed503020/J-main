@@ -1,0 +1,25 @@
+<div [ngClass]="{'d-none':fCtrls.UpdatedUserData.value.userName != null}">
+    <div class="d-flex justify-content-center">
+        <div class="p-5 bg-white  ng-star-inserted row mb-3 w-lg-500px rounded">
+            <p class="text-center fw-bolder">
+                <span class="text-dark fs-4"> مرحب بك {{fCtrls.userName.value}} </span>
+            </p>
+            <p class="fs-4">
+                <span class="fw-bolder text-dark"> البريد الالكتروني :</span>
+                <span class="text-dark fs-4 ms-5"> {{fCtrls.userEmail.value!}} </span>
+            </p>
+            <p class="fs-4 mb-8">
+                <span class="fw-bolder  text-dark"> رقم الجوال : </span>
+                <span class="text-dark fs-4 ms-5">{{fCtrls.userPhone.value}} </span>
+            </p>
+        </div>
+    </div>
+    <div class="d-flex justify-content-center">
+        <app-enter-otp-shared #enterOtpShared [isExceededOtpTry]="fCtrls.isExceededOtpTry.value || false" [maxNumberOfTry]="3"
+            [numberOfTry]="fCtrls.trySendOtpCount.value || 0" (onResendCodeEmit)="onResendCode()"
+            (onChangeOtpSuccefully)="verifyCode($event.otpCode,$event.reCaptchaKey)"></app-enter-otp-shared>
+    </div>
+</div>
+<div [ngClass]="{'d-none':fCtrls.UpdatedUserData.value.userName == null}">
+
+</div>

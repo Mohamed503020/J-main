@@ -1,0 +1,29 @@
+<div class="d-flex justify-content-center">
+    <div class="w-lg-500px">
+        <div class="mb-5 login__container">
+            <div class="d-grid">
+                <ul class="nav nav-tabs  text-nowrap border-0 px-0 ">
+                    <li class="nav-item px-0 col">
+                        <a class="nav-link btn w-100  " (click)="onChangeMode(loginScreenMode.MainAccount)"
+                            [ngClass]="{ 'login__container__btn--primary': fCtrls.mode.value == loginScreenMode.MainAccount , 'login__container__btn--secondary':fCtrls.mode.value == loginScreenMode.SubAccount}"
+                            href="javascript:void(0)">حساب رئيسى</a>
+                    </li>
+                    <li class="nav-item px-0 col">
+                        <a class="nav-link btn w-100  " (click)="onChangeMode(loginScreenMode.SubAccount)"
+                            [ngClass]="{ 'login__container__btn--primary': fCtrls.mode.value == loginScreenMode.SubAccount , 'login__container__btn--secondary':fCtrls.mode.value == loginScreenMode.MainAccount}"
+                            style="margin-right: 5px;" href="javascript:void(0)">حساب فرعى</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="tab-content mt-8" id="myTabContent">
+            <div class="tab-pane fade " [ngClass]="{ 'show active': fCtrls.mode.value == loginScreenMode.MainAccount}">
+                <app-main-account-container></app-main-account-container>
+            </div>
+            <div class="tab-pane fade" [ngClass]="{ 'show active': fCtrls.mode.value == loginScreenMode.SubAccount}">
+                <app-sub-account-container></app-sub-account-container>
+            </div>
+        </div>
+    </div>
+</div>

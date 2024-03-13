@@ -1,0 +1,48 @@
+<div class="log_issues_page  d-flex justify-content-center">
+  <div class="w-lg-600px">
+
+    <div class="difficulty_something bg-white p-5 mt-5 rounded w-100" [@fade]
+      *ngIf="fCtrls.loginIssueLvl1.value == null">
+      <div class="title d-flex align-items-center justify-content-between mb-3">
+        <div class="title_text bg-primary rounded px-5 py-3 text-white h2 w-50">
+          اجد صعوبة في :
+        </div>
+        <!-- <div class="title_icon w-auto">
+          <i class="fa fa-arrow-left text-primary mb-5 fs-4" style="cursor: pointer;"></i>
+        </div> -->
+      </div>
+      <div class="form-group  mb-5 ">
+        <div class="form-check mb-3 w-100 mx-5" *ngFor="let item of  (loginTypeIssueArr$ |async)">
+          <input type="radio" class="form-check-input" style="cursor: pointer;"
+            (change)="onChangeloginTypeIssueLvl1(item)" name="difficultySomething" value="{{item.id}}">
+          <label class="form-check-label ">{{item.name}}</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="verification_section bg-white p-5 mt-5 rounded" [@fade]
+      *ngIf="fCtrls.loginIssueLvl1.value != null && fCtrls.loginIssueLvl2.value == null">
+      <div class="title d-flex align-items-center justify-content-between ">
+        <div class="title_text  py-3 text-primary h2 w-auto">
+          {{( selectedLoginIssueType$|async)?.name}} :
+        </div>
+        <div class="title_icon ">
+          <i class="fa fa-arrow-left text-primary mb-5 fs-4" style="cursor: pointer;" (click)="onBackLvl1()"></i>
+        </div>
+      </div>
+      <div class="form-group w-100  mb-5 ">
+        <div class="form-check mb-3 w-100 mx-5" *ngFor="let item of ( selectedLoginIssueType$|async)?.details!">
+          <input type="radio" class="form-check-input" name="verfication" style="cursor: pointer;"
+            (change)="onChangeloginTypeIssueLvl2(item.id)" value="{{item.id}}">
+          <label class="form-check-label" for="en"> {{item.name}} </label>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="log_issues_details" [@fade] *ngIf="fCtrls.loginIssueLvl2.value != null">
+      <app-log-in-issue-details (onBackEmit)="onBackLvl2()" [lvl1]="(selectedLoginIssueType$ | async)!"
+        [lvl2]="(selectedLoginIssueTypeDetail$ |async)!" [guestIp]="(guestIp$ |async)"></app-log-in-issue-details>
+    </div>
+  </div>
+</div>

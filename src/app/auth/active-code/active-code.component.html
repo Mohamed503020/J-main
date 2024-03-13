@@ -1,0 +1,5 @@
+<div class="d-flex justify-content-center">
+<app-enter-otp-shared #enterOtpShared [isExceededOtpTry]="fCtrls.isExceededOtpTry.value || false" [maxNumberOfTry]="3"
+[numberOfTry]="fCtrls.trySendOtpCount.value || 0" (onResendCodeEmit)="onResendCode()"
+(onChangeOtpSuccefully)="verifyCode($event.otpCode,$event.reCaptchaKey)"></app-enter-otp-shared>
+</div>

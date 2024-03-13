@@ -1,0 +1,30 @@
+<div class="bg-white w-lg-500px w-100 rounded p-5">
+    <div class="pb-2 pt-lg-0 mt-6 mb-6">
+        <h3 class="text-primary font-size-h4 text-center">
+            ادخل كود التحقق المرسل الي جوالك
+        </h3>
+    </div>
+    <div class="otp text-center mb-6" dir="ltr">
+        <div class="alert alert-warning mb-3" role="alert" *ngIf="isExceededOtpTry == false">
+            <strong> عدد المحاولات المتبقيه - ({{numberOfTry - maxNumberOfTry}} من 3)</strong>
+        </div>
+        <div class="alert alert-danger mb-3" role="alert" *ngIf="isExceededOtpTry == true">
+            <strong>لقد استنفذت جميع المحاولات</strong>
+        </div>
+        <ng-otp-input #ngOtpInput [formCtrl]="fCtrls.otpCode" [config]="{length:6}"></ng-otp-input>
+    </div>
+    <div class="fv-row mb-8 re-captcha__container">
+        <re-captcha #reCapatchaElem [siteKey]="reCaptchaKey" (resolved)="this.fCtrls.reCaptchaKey.patchValue($event)">
+        </re-captcha>
+    </div>
+    <div class="d-flex justify-content-between mb-5" >
+        <button type="button" id="kt_login_signin_submit"
+            class="btn btn-primary " (click)="onGoBack()">
+            عوده
+        </button>
+        <button type="button" class="btn btn-primary " (click)="onResendCode()"
+             [disabled]="isExceededOtpTry == true">
+            <span class="indicator-label">إعاده ارسال الكود</span>
+        </button>
+    </div>
+</div>

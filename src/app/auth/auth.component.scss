@@ -1,0 +1,152 @@
+$main-color: #5c6bc0;
+$second-color: #3f50a9;
+#kt_app_root{
+position: absolute;
+left: 0;
+right: 0;
+top: 0;bottom: 0;
+height: 100%;
+
+@media (max-height:600px){
+  &{
+    position: relative;
+    height: fit-content;
+  }
+}
+}
+
+.auth__forms__continer {
+  background-color: $main-color;
+  color: #fff;
+ min-height: 100%;
+height: fit-content;
+  .nav_actions {
+    margin-top: 20px;
+
+  }
+
+  .footer_menu {
+
+    a,
+    a.active,
+    a:hover {
+      color: #FFF;
+    }
+  }
+
+  a.lang_menu_link.active p,
+  a.lang_menu_link:hover p a.lang_menu_link.active span,
+  a.lang_menu_link:hover span {
+    color: #fff !important;
+  }
+
+}
+
+.img__container {
+  margin-top: 150px;
+
+  img {
+    margin-bottom: 40px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    font-family: 'Cairo', sans-serif !important;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: 1.175rem;
+    font-family: 'Cairo', sans-serif !important;
+  }
+
+  @media (max-width:1180px) {
+    & {
+      display: none !important;
+    }
+  }
+}
+
+
+
+:host ::ng-deep {
+
+  form label {
+    font-size: 13px !important;
+    font-weight: bolder;
+    color: #fff !important;
+    font-family: 'Cairo', sans-serif !important;
+  }
+
+  form .form-control {
+    font-size: 1rem !important;
+    color: #3f4254 !important;
+  }
+
+
+  form input::-webkit-input-placeholder {
+    font-size: 11px !important;
+  }
+
+
+  form input::-moz-placeholder {
+    font-size: 11px !important;
+  }
+
+  form input::-moz-placeholder {
+    font-size: 11px !important;
+  }
+
+  form input::-ms-input-placeholder {
+    font-size: 11px !important;
+  }
+
+  .btn {
+    font-size: 1.4rem !important;
+    font-family: 'Cairo', sans-serif !important;
+  }
+
+.btn--submit {
+    color: $main-color  !important;
+    margin-top: 10px  ;
+    background-color: #f3f6f9  !important;;
+    font-size: 15px !important;
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+  width: fit-content !important;
+    position: relative;
+  }
+
+  .auth__container {
+    overflow-x: hidden;
+    min-height: 100%;
+    height:100% !important;
+  }
+
+  .re-captcha__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+
+}
+
+.auth-footer__container {
+  position: absolute;
+  top: 20px;
+  left: 0px;
+  right: 0px;
+}
+
+.back-to-login__btn {
+  z-index: 1;
+}
+
+.logo__container.is-login-screen {
+  @media  only screen and (max-height:650px) and (min-height: 600px) {
+    display: none;
+  }
+}
+

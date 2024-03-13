@@ -1,0 +1,54 @@
+<!--begin::App-->
+<div class="d-flex flex-column flex-root app-root" id="kt_app_root" style="min-height: 100vh;">
+    <!--begin::Page-->
+    <div class="app-page flex-column flex-column-fluid" id="kt_app_page">
+        <!--begin::Header-->
+        <app-header></app-header>
+        <!--end::Header-->
+        <!--begin::Wrapper-->
+        <div class="app-wrapper flex-column flex-row-fluid" id="kt_app_wrapper">
+            <!--begin::Sidebar-->
+            <app-sidebar></app-sidebar>
+            <!--end::Sidebar-->
+            <!--begin::Main-->
+            <div class="app-main flex-column flex-row-fluid" id="kt_app_main">
+                <!--begin::Content wrapper-->
+                <div class="d-flex flex-column flex-column-fluid">
+                    <!--begin::Toolbar-->
+                    <div id="kt_app_toolbar" class="app-toolbar mb-5 mb-lg-0">
+                        <!--begin::Toolbar container-->
+                        <div id="kt_app_toolbar_container"
+                            class="app-container container-xxl d-flex flex-stack flex-wrap"></div>
+                        <!--end::Toolbar container-->
+                    </div>
+                    <!--end::Toolbar-->
+                    <!--begin::Content-->
+                    <div id="kt_app_content" class="app-content flex-column-fluid">
+                        <!--begin::Content container-->
+                        <div id="kt_app_content_container" class="app-container container-xxl">
+                            <!--begin::Row-->
+                            <div class="row gx-5 gx-xl-10">
+                                <router-outlet></router-outlet>
+                            </div>
+                            <!--end::Row-->
+                        </div>
+                        <!--end::Content container-->
+                    </div>
+                    <!--end::Content-->
+                </div>
+                <!--end::Content wrapper-->
+                <!--begin::Footer-->
+                <app-footer></app-footer>
+                <!--end::Footer-->
+            </div>
+            <!--end:::Main-->
+        </div>
+        <!--end::Wrapper-->
+    </div>
+    <!--end::Page-->
+</div>
+<!--end::App-->
+<!-- <app-activities></app-activities>
+<app-drawer-chat></app-drawer-chat> -->
+<!-- <app-shoping-cart></app-shoping-cart> -->
+<app-scroll-top></app-scroll-top>

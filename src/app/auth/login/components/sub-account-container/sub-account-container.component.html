@@ -1,0 +1,43 @@
+<form class="form w-100" #nForm="ngForm" [formGroup]="rForm" (ngSubmit)="rForm!.valid && onLogin()" novalidate
+    [ngClass]="{ 'submitted-form': nForm!.submitted }">
+    <div class="fv-row">
+        <div class="col-12 mb-5">
+            <label for="exampleFormControlInput1" class=" form-label"> البريد الالكترونى
+                للحساب الرئيسى</label>
+            <input type="email" class="form-control  h-auto py-2 px-6 " placeholder="البريد الالكترونى"
+                [formControl]="fCtrls!.email" autocomplete="off" name="email" />
+        </div>
+        <div class="col-12 mb-5">
+            <label class=" form-label">رقم الجوال للحساب الفرعى</label>
+            <ngx-intl-tel-input [cssClass]="'form-control w-100  h-auto py-2 '"
+                [preferredCountries]="(preferredCountries$  | async)!" dir="ltr" [enableAutoCountrySelect]="true"
+                [enablePlaceholder]="false" [searchCountryFlag]="true"
+                [searchCountryField]="[searchCountryField.Iso2, searchCountryField.Name]" [selectFirstCountry]="false"
+                [maxLength]="20" [phoneValidation]="true" [selectedCountryISO]="fCtrls.selectedCountryISO.value"
+                [separateDialCode]="true" [formControl]="fCtrls!.phone">
+            </ngx-intl-tel-input>
+        </div>
+        <div class="col-12 mb-5">
+            <label for="exampleFormControlInput3" class=" form-label"> كلمة المرور
+            </label>
+            <input type="password" placeholder="كلمة المرور" [formControl]="fCtrls!.password" autocomplete="off"
+                class="form-control  h-auto py-2 px-6 " name="password" />
+        </div>
+        <div class="col-12 re-captcha__container">
+            <re-captcha #reCapatchaElem [siteKey]="reCaptchaKey" (resolved)="fCtrls.reCaptcha.patchValue($event)">
+            </re-captcha>
+        </div>
+    </div>
+
+    <!--begin::Submit button-->
+    <div class="pb-lg-0 d-flex justify-content-center mb-5 ">
+        <button type="submit" id="kt_auth_in_submit" class="btn btn--submit"
+            [disabled]="fCtrls.reCaptcha.value == null">
+            <!--begin::Indicator label-->
+            <span class="indicator-label">تسجيل الدخول</span>
+            <!--end::Indicator label-->
+        </button>
+    </div>
+
+    <!--end::Submit button-->
+</form>

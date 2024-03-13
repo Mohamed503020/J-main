@@ -1,0 +1,14 @@
+:host ::ng-deep{ 
+ ngx-intl-tel-input{
+    width: 100%;
+    color: black;
+    .iti.iti--allow-dropdown{
+        width: 100%;
+    }}
+}
+
+input[type='file']::after {
+    content: '';
+    color: black;
+  }
+
